@@ -10,7 +10,22 @@ date: 2020-01-16T11:26:43+03:00
 
   Freelancer
 
-  something
+  I founded _Special Circumstances_ to be free to offer the best of the expertise I gathered so far in my career in IT, anywhere, to any firm in the world. _Special Circumstances_ coaches and supports teams and firms on a wide variety of important tasks that constantly challenge the modern IT industry, like:
+
+  - choose right tools and Cloud providers
+  - _how to migrate from/to the Cloud_ strategies
+  - _Infrastructure as Code_ setup and refactoring
+  - extend system automation freeing operators from toil
+  - expand knowledge devising monitoring strategies and visibility over KPIs
+  - unit + integration + E2E test and code review workflows
+  - deployment automation through Continous Integration / Continuous Delivery pipelines
+  - [Serverless](https://serverless-conf) architectures and dev environment (local and remote) setups
+  - _SPA_ applications leveraging modern technologies like reactive/responsive web frameworks and [JAMStack](https://jamstack)
+  - planning and execution of deliverable (_build_) deploys, dataset migrations, major version middleware upgrades, etc.
+  - _Monolith vs. Microservices_ strategy analysis
+  - (virtual) network layout design
+
+  ... and more, with a constant eye on keeping everything secuire and usable by both end users and operators.
 
 - #### Bonial International GmbH, Berlin (Germany)
 
