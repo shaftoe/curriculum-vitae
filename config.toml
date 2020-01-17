@@ -1,0 +1,7 @@
+baseURL = "https://cv.l3x.in/"
+languageCode = "en-us"
+title = "Alexander Fortin's curriculum vitae"
+
+[params]
+  author = "Alexander Fortin"
+  workTitle = "Full Stack Software Engineer"

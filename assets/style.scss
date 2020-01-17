@@ -1,0 +1,173 @@
+$secondaryColor: #FC9700;
+$sections: photo, name, about, work, education, skills, languages, community, hobbies, links;
+
+// ### Sane defaults ###
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, ul, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+// ### Typography ###
+body {
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+p {
+  text-indent: 1em;
+}
+
+h1 { // name
+  padding: 0;
+  font-size: 11vmin;
+}
+
+h2 { // title
+  font-size: 6vmin;
+  color:$secondaryColor;
+}
+
+h1, h2 {
+  line-height: initial;
+  text-decoration: none;
+}
+
+h3 { // section title
+  font-size: 2rem;
+  padding-bottom: 0.5em;
+  text-decoration: underline $secondaryColor;
+  text-transform: capitalize;
+}
+
+h4 { // company name
+  font-size: 1.6rem;
+}
+
+// ### Grid: create grid area names
+@each $section in $sections {
+  .#{$section} {
+    grid-area : $section;
+  }
+}
+
+article { // Main grid
+  margin: 6vmin;
+
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "photo"
+    "name"
+    "about"
+    "work"
+    "education"
+    "skills"
+    "languages"
+    "community"
+    "hobbies"
+    "links";
+}
+
+section {
+  margin-bottom: 1em;
+}
+
+section.work {
+  li {
+    padding-bottom: 2em;
+  }
+
+  ul:last-child {
+    padding-bottom: unset;
+  }
+
+  p:nth-of-type(1) { // working time period
+    text-transform: capitalize;
+    font-style: italic;
+  }
+
+  p:nth-of-type(2) { // working title
+    font-weight: normal;
+    color: $secondaryColor;
+  }
+
+  p:nth-of-type(3) { // job description
+    padding-top: 0.5em;
+  }
+}
+
+section.name {
+  display: flex;
+  align-items: center; // center vertically
+  text-align: center;
+
+  div {
+    width: 100%;
+  }
+}
+
+section.photo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  border: 2px solid $secondaryColor;
+  border-radius: 50%;
+}
+
+@media (max-width: 450px) {
+  section.photo img {
+    max-width: 75vw;
+  }
+}
+
+@media (min-width: 800px) {
+
+  article {
+    max-width: 85vw;
+    margin: 5vmin auto;
+
+    gap: 4vmin 3em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "name       photo"
+      "about      ..."
+      "work       skills"
+      "work       languages"
+      "work       education"
+      "work       hobbies"
+      "community  community"
+      "references references"
+      "links      links";
+
+  }
+
+  section.photo img {
+    margin: 0;
+  }
+
+  section.name {
+    text-align: left;
+  }
+}
+
+@media print {
+  /* remove any screen only styles, for example link underline */
+}
+
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}

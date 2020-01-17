@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{{ with .Site.Language.Lang }}
+<html lang="{{ . }}">
+{{ end }}
+
+  <head>
+    {{ partial "head" .Site.Title }}
+  </head>
+
+  <body>
+    <!-- TODO add this before prod <a class="github-fork-ribbon" href="http://github.com/shaftoe/cv" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
+    {{ block "content" . }}{{ end }}
+  </body>
+
+</html>
