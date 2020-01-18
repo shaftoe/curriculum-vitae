@@ -23,13 +23,24 @@ header {
   justify-content: space-between;
   text-align: left;
 
-  img {
-    order: 1;
-  }
-
   div {
     display: flex;
     justify-content: center;
+  }
+
+  div#photo {
+    flex: 1;
+    order: 1;
+  }
+
+  div#nameandtitle {
+    flex: 2;
     flex-flow: column;
   }
+}
+
+section.work p:nth-of-type(2) { // make title stick on top
+  position: sticky;
+  top: 75px;
+  background-color: white;
 }

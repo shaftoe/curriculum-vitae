@@ -24,5 +24,10 @@ draft: false
   - jQuery + Bootstrap
   - Jekyll
 
+- WEB
+  - responsive designs with CSS Grid, CSS Flexbox, media queries
+  - hugo
+  - vue
+
 - CERTIFICATIONS
   - Puppet Professional (PCP0000323)

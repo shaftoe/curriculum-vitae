@@ -17,7 +17,7 @@ ul {
   list-style: none;
 }
 
-// ### Typography ###
+// ### Typography and margins ###
 body {
   font-family: roboto, sans-serif;
   font-size: 20px;
@@ -48,43 +48,55 @@ h1, h2 {
 }
 
 h3 { // section title
+  top: 0;
+  z-index: 2;
+
   font-size: 2rem;
-  padding-bottom: 0.5em;
   text-decoration: underline $secondaryColor;
   text-transform: capitalize;
 }
 
 h4 { // company name
-  font-size: 1.6rem;
+  top: 45px;
+  z-index: 1;
+
+  font-size: 1em;
 }
 
-// ### Grid: create grid area names
-@each $section in $sections {
+h3, h4 { // make title stick on top
+  background-color: white;
+  position: sticky;
+}
+
+article {
+  margin: 6vmin;
+}
+
+section {
+  margin-bottom: 1em;
+}
+
+// ### CSS grid ###
+@each $section in $sections { // create grid area names
   .#{$section} {
     grid-area: $section;
   }
 }
 
-article { // Main grid
-  margin: 6vmin;
-
+article { // Main grid container
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
-    "about"
     "work"
+    "about"
     "education"
     "skills"
     "languages"
     "community"
     "hobbies"
     "links";
-}
-
-section {
-  margin-bottom: 1em;
 }
 
 section.work {
@@ -127,12 +139,11 @@ section.work {
 
 header {
   grid-area: header;
+  margin-bottom: 1.5em;
   text-align: center;
 
   img {
-    margin: auto;
     max-width: 250px;
-    display: block;
     border: 2px solid $secondaryColor;
     border-radius: 50%;
   }

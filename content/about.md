@@ -2,7 +2,6 @@
 title: "About me"
 date: 2020-01-16T11:14:01+03:00
 class: "about"
-draft: false
 ---
 
 Soon after my discovery of GNU/Linux, sometime around 1996, my life changed dramatically, with Open Source software becaming something between a passion and a de-facto obsession. I still remember the sweat and long hours reading the little and sometimes exoteric documentation I had, trying to get an ADSL modem work. The elation once I first saw a web page displaying on my desktop (at that time I was running some Linux flavour called _Mandrake_) is still vivid in my memory, for the young me that was an intellectually very satisfying feat and, well, hooked me for good.
