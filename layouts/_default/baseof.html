@@ -8,7 +8,10 @@
   </head>
 
   <body>
-    <!-- TODO add this before prod <a class="github-fork-ribbon" href="http://github.com/shaftoe/cv" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
+    {{ with $.Param "githubLink" }}
+      {{ partial "github-corner" . }}
+    {{ end }}
+
     {{ block "content" . }}{{ end }}
   </body>
 

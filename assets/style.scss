@@ -1,5 +1,6 @@
 $secondaryColor: #FC9700;
-$sections: about, work, education, skills, languages, community, hobbies, links;
+$breakpoint: 800px;
+$sections: about, work, education, skills, programming, languages, community, hobbies, links;
 
 // ### Sane defaults ###
 *,
@@ -8,13 +9,15 @@ $sections: about, work, education, skills, languages, community, hobbies, links;
   box-sizing: border-box;
 }
 
-body, ul, p, h1, h2, h3, h4 {
+body, p, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
 
 ul {
-  list-style: none;
+  margin: 0;
+  padding-left: 1em;
+  list-style-type: square;
 }
 
 // ### Typography and margins ###
@@ -22,6 +25,11 @@ body {
   font-family: roboto, sans-serif;
   font-size: 20px;
   line-height: 1.5;
+}
+
+a, a:active, a:hover  {
+  color: $secondaryColor;
+  text-decoration: none;
 }
 
 p {
@@ -74,6 +82,11 @@ article {
 
 section {
   margin-bottom: 1em;
+
+}
+
+section:not([class=work]) li > p {
+  text-indent: unset;
 }
 
 // ### CSS grid ###
@@ -93,6 +106,8 @@ article { // Main grid container
     "about"
     "education"
     "skills"
+    "programming"
+    "tools"
     "languages"
     "community"
     "hobbies"
@@ -104,18 +119,20 @@ section.work {
     padding-bottom: 2em;
   }
 
-  ul ul { // list of items in a job description
-    padding: 0.5em 0 0.5em 1em;
-    list-style-type: square;
+  ul {
+    list-style: none;
+    padding: 0;
 
-    li {
-      padding-bottom: unset;
+    ul { // list of items in a job description
+      padding: 0.5em 0 0.5em 1em;
+      list-style-type: square;
+
+      li {
+        padding-bottom: unset;
+      }
     }
   }
 
-  ul:last-child {
-    padding-bottom: unset;
-  }
 
   p:nth-of-type(1) { // working time period
     text-transform: capitalize;
@@ -139,13 +156,26 @@ section.work {
 
 header {
   grid-area: header;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
   margin-bottom: 1.5em;
   text-align: center;
 
-  img {
-    max-width: 250px;
-    border: 2px solid $secondaryColor;
-    border-radius: 50%;
+  div#nameandtitle {
+    padding-top: 1em;
+  }
+
+  div#photo {
+    align-items: center;
+
+    img {
+      max-width: 14em;
+      border: 2px solid $secondaryColor;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -157,12 +187,14 @@ article.mono-section { // collapse grid columns when displayed in Hugo single la
   }
 }
 
-@media all and (min-width: 800px) {
+@media print, screen and (min-width: $breakpoint) {
   @import 'style-desktop.scss';
 }
 
+@import 'github-corner.scss';
+
 @media print {
-  /* remove any screen only styles, for example link underline */
+  /* TODO remove any screen only styles, for example link underline */
 }
 
 @page {

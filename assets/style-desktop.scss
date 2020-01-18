@@ -7,6 +7,8 @@ article {
   grid-template-areas:
     "header     header"
     "work       skills"
+    "work       programming"
+    "work       tools"
     "work       languages"
     "work       education"
     "work       hobbies"
@@ -18,24 +20,16 @@ article {
 }
 
 header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  text-align: left;
-
-  div {
-    display: flex;
-    justify-content: center;
-  }
+  flex-direction: row;
 
   div#photo {
     flex: 1;
-    order: 1;
+    order: 1; // move to the right
   }
 
   div#nameandtitle {
     flex: 2;
-    flex-flow: column;
+    text-align: left;
   }
 }
 
