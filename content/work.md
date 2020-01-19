@@ -4,11 +4,11 @@ class: "work"
 date: 2020-01-16T11:26:43+03:00
 # **IMPORTANT NOTES** to match CSS rules:
 #
-# - main content: list of job elements
+# - main content: unordered list of job elements
 # - element fist line: H4 tag of firm name, e.g. '#### SpaceX'
 # - element first paragraph: time delta, e.g. 'january 2017 - current'
 # - element second paragraph: job title, e.g. 'Janitor in chief'
-# - element third paragraph: description
+# - element following paragraphs: description
 ---
 
 - #### Special Circumstances Ltd
@@ -42,7 +42,7 @@ date: 2020-01-16T11:26:43+03:00
 
   I joined Bonial to join the challenge of refactor a relatively big Puppet codebase. After joining the Operations team as team lead, in was in charge of the overall infrastructure stability, robustness, and maintainability, together with enforcing best practices to improve quality standards and overall team’s health. Technologies: AWS / Rackspace cloud, Debian, Ganeti, Docker, Terraform, Puppet, Icinga, Apache web server, Tomcat/JVM, PostgreSQL, Python automation with Fabric and Boto libraries, Jenkins, Gerrit, Datadog, OpenLDAP, data confidentiality with LUKS, BoxBackup, Duplicity.
 
-- #### Spreaker, San Francisco (Italy/Germany/USA)
+- #### Spreaker (Italy / Germany / USA)
 
   october 2011 - june 2013
 
