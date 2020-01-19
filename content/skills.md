@@ -10,6 +10,3 @@ draft: false
 - full-stack software development
 - responsive designs with CSS Grid, CSS Flexbox, media queries
 - leadership
-
-- CERTIFICATIONS
-  - Puppet Professional (PCP0000323)

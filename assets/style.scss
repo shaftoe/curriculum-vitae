@@ -1,6 +1,6 @@
 $secondaryColor: #FC9700;
 $breakpoint: 800px;
-$sections: about, work, education, skills, programming, languages, community, hobbies, links;
+$sections: about, work, education, skills, programming, languages, community, hobbies, links, certs;
 
 // ### Sane defaults ###
 *,
@@ -104,10 +104,11 @@ article { // Main grid container
     "header"
     "work"
     "about"
-    "education"
     "skills"
     "programming"
     "tools"
+    "education"
+    "certs"
     "languages"
     "community"
     "hobbies"

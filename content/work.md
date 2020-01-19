@@ -22,10 +22,9 @@ date: 2020-01-16T11:26:43+03:00
   - choose right tools and Cloud providers
   - _how to migrate from/to the Cloud_ strategies
   - _Infrastructure as Code_ setup and refactoring
-  - extend system automation freeing operators from toil
+  - extend system automation to free operators from toil
   - expand knowledge devising monitoring strategies and visibility over KPIs
-  - unit + integration + E2E test and code review workflows
-  - deployment automation through Continous Integration / Continuous Delivery pipelines
+  - unit + integration + E2E test and code review workflows via Continous Integration / Continuous Delivery pipelines
   - [Serverless](https://serverless-conf) architectures and dev environment (local and remote) setups
   - _SPA_ applications leveraging modern technologies like reactive/responsive web frameworks and [JAMStack](https://jamstack)
   - planning and execution of deliverable (_build_) deploys, dataset migrations, major version middleware upgrades, etc.
@@ -40,7 +39,28 @@ date: 2020-01-16T11:26:43+03:00
 
   Senior System Engineer
 
-  I joined Bonial to join the challenge of refactor a relatively big Puppet codebase. After joining the Operations team as team lead, in was in charge of the overall infrastructure stability, robustness, and maintainability, together with enforcing best practices to improve quality standards and overall team’s health. Technologies: AWS / Rackspace cloud, Debian, Ganeti, Docker, Terraform, Puppet, Icinga, Apache web server, Tomcat/JVM, PostgreSQL, Python automation with Fabric and Boto libraries, Jenkins, Gerrit, Datadog, OpenLDAP, data confidentiality with LUKS, BoxBackup, Duplicity.
+  Bonial was looking for someone willing to embrace the challenge of refactoring their relatively big Puppet codebase. After joining the Operations team as team lead, I was in charge of the overall infrastructure stability, robustness and maintainability, together with enforcing best practices to improve quality standards and overall team’s health.
+
+  Technology stack:
+
+  - AWS / Rackspace cloud
+  - Debian
+  - Ganeti
+  - Docker
+  - Terraform
+  - Puppet
+  - Icinga
+  - Apache web server
+  - Tomcat/JVM
+  - PostgreSQL
+  - Python automation with Fabric and Boto libraries
+  - Jenkins
+  - Gerrit
+  - Datadog
+  - OpenLDAP
+  - data confidentiality with LUKS
+  - Duplicity
+  - ...
 
 - #### Spreaker (Italy / Germany / USA)
 
