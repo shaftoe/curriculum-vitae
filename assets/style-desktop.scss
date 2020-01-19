@@ -23,12 +23,12 @@ article {
 header {
   flex-direction: row;
 
-  div#photo {
+  figure {
     flex: 1;
     order: 1; // move to the right
   }
 
-  div#nameandtitle {
+  #nameandtitle {
     flex: 2;
     text-align: left;
   }

@@ -39,13 +39,13 @@ date: 2020-01-16T11:26:43+03:00
 
   Senior System Engineer
 
-  Bonial was looking for someone willing to embrace the challenge of refactoring their relatively big Puppet codebase. After joining the Operations team as team lead, I was in charge of the overall infrastructure stability, robustness and maintainability, together with enforcing best practices to improve quality standards and overall team’s health.
+  Bonial, a multinational web service in the publishing field, was looking for someone willing to embrace the challenge of refactoring their relatively big Puppet codebase. I was eager to get onboad and test my skills on a big scale. I joined the _Operations_ team as team lead, in charge of the overall infrastructure stability, robustness and maintainability, enforcing best operational practices. The final goal was to improve processes quality while keeping the team alligned with our goals.
 
-  Technology stack:
+  The technological stack:
 
   - AWS / Rackspace cloud
-  - Debian
-  - Ganeti
+  - Debian GNU/Linux
+  - Ganeti virtualization
   - Docker
   - Terraform
   - Puppet
@@ -59,7 +59,6 @@ date: 2020-01-16T11:26:43+03:00
   - Datadog
   - OpenLDAP
   - data confidentiality with LUKS
-  - Duplicity
   - ...
 
 - #### Spreaker (Italy / Germany / USA)

@@ -9,7 +9,7 @@ $sections: about, work, education, skills, programming, languages, community, ho
   box-sizing: border-box;
 }
 
-body, p, h1, h2, h3, h4 {
+body, p, h1, h2, h3, h4, figure {
   margin: 0;
   padding: 0;
 }
@@ -165,11 +165,11 @@ header {
   margin-bottom: 1.5em;
   text-align: center;
 
-  div#nameandtitle {
+  #nameandtitle {
     padding-top: 1em;
   }
 
-  div#photo {
+  figure {
     align-items: center;
 
     img {

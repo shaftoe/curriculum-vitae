@@ -31,7 +31,7 @@ Please feel free to fork this repo, just remember to **clean up** the content fr
 
 ## Deploy
 
-I'm using a free account on [Netlify](#credits) to automate deployment at each new commit pushed to master, check the [official documentation](https://docs.netlify.com/site-deploys/overview/) if you want to know more about their CI/CD features.
+I'm using an account on [Netlify](#credits) to automate deployment at each new commit pushed to master, check the [official documentation](https://docs.netlify.com/site-deploys/overview/) if you want to know more about their CI/CD features.
 
 PS Netlify supports latest stable Hugo version.
 
