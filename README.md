@@ -4,6 +4,14 @@ A simple and effective way to keep my CV up to date and always available, with a
 
 Regardless of the technology used, since long you can always find the most up-to-date version of my CV at [https://cv.l3x.in/](https://cv.l3x.in/).
 
+## Features
+
+- easy to maintain
+- fast (thanks to Netlify CDN and assets optimization)
+- displays on any modern browser
+- semantic markup accessible from a vast number of devices (including screen readers)
+- printable as A4 or PDF
+
 ## Tech
 
 - [Hugo](https://gohugo.io/) static site generator:
