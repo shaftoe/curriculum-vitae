@@ -1,16 +1,18 @@
 # A curriculum vitae built with modern web technologies
 
-A simple and effective way to keep my CV up to date and always available, with all the actual content in easy-to-maintain [Markdown](https://www.markdownguide.org/) files, published as an accessible and optimized responsive web site.
+A simple and effective way to keep my CV up to date and always available, published as accessible and optimized responsive web site.
 
 Regardless of the technology used, since long you can always find the most up-to-date version of my CV at [https://cv.l3x.in/](https://cv.l3x.in/).
 
 ## Features
 
-- easy to maintain
-- fast (thanks to Netlify CDN and assets optimization)
-- displays on any modern browser
+- easy to keep up to date, all content in [Markdown](https://www.markdownguide.org/) files
+- easy to edit layout
+- fast load times (thanks to Netlify CDN and assets optimization)
+- displays decently on any modern web browser (including small screen devices)
 - semantic markup accessible from a vast number of devices (including screen readers)
-- printable as A4 or PDF
+- printable from the browser as A4 or PDF
+- single section views exposed as `/<section name>/`, e.g. [https://cv.l3x.in/about/](https://cv.l3x.in/about/)
 
 ## Tech
 

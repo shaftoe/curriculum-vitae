@@ -14,6 +14,10 @@ body, p, h1, h2, h3, h4, figure, article, section {
   padding: 0;
 }
 
+body {
+  width: 100%;
+}
+
 ul {
   margin: 0;
   padding-left: 1em;
@@ -23,7 +27,6 @@ ul {
 // ### Typography and margins ###
 article {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
   line-height: 1.5;
 }
 
@@ -41,10 +44,11 @@ p + p {
 }
 
 h1 { // name
-  font-size: 2.8rem;
+  font-size: 2.7rem;
 }
 
 h2 { // title
+  font-size: 1.5rem;
   color:$secondaryColor;
 }
 

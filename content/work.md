@@ -17,16 +17,18 @@ date: 2020-01-16T11:26:43+03:00
 
   Freelancer
 
-  I founded _Special Circumstances_ to be free to offer the best of the expertise I gathered so far in my career in IT, anywhere, to any firm in the world. _Special Circumstances_ coaches and supports teams and firms on a wide variety of important tasks that constantly challenge the modern IT industry, like:
+  I founded _Special Circumstances_ to be free to offer the best of the expertise I gathered so far in my career, anywhere, to any firm in the world.
+
+  _Special Circumstances_ coaches and supports teams and firms on a wide variety of important tasks that constantly challenge the modern IT industry, like:
 
   - choose right tools and Cloud providers
   - _how to migrate from/to the Cloud_ strategies
   - _Infrastructure as Code_ setup and refactoring
   - extend system automation to free operators from toil
-  - expand knowledge devising monitoring strategies and visibility over KPIs
+  - gather visibility over KPIs through telemetry
   - unit + integration + E2E test and code review workflows via Continous Integration / Continuous Delivery pipelines
-  - [Serverless](https://serverless-conf) architectures and dev environment (local and remote) setups
-  - _SPA_ applications leveraging modern technologies like reactive/responsive web frameworks and [JAMStack](https://jamstack)
+  - Serverless architectures and dev environment (local and remote) setups
+  - _SPA_ applications leveraging modern technologies like reactive/responsive web frameworks and JAMStack
   - planning and execution of deliverable (_build_) deploys, dataset migrations, major version middleware upgrades, etc.
   - _Monolith vs. Microservices_ strategy analysis
   - (virtual) network layout design
@@ -39,7 +41,9 @@ date: 2020-01-16T11:26:43+03:00
 
   Senior System Engineer
 
-  Bonial, a multinational web service in the publishing field, was looking for someone willing to embrace the challenge of refactoring their relatively big Puppet codebase. I was eager to get onboad and test my skills on a big scale. I joined the _Operations_ team as team lead, in charge of the overall infrastructure stability, robustness and maintainability, enforcing best operational practices. The final goal was to improve processes quality while keeping the team alligned with our goals.
+  Bonial, multinational business in the publishing field, was looking for someone willing to embrace the challenge of refactoring their relatively big Puppet codebase. I was eager to get onboad and test my skills on a new scale (thousand of servers).
+
+  I happily joined the _Operations_ team as team lead and put in charge of the overall infrastructure stability, robustness and maintainability, enforcing best operational practices. The final goal was to improve processes quality while keeping the team alligned and healthy.
 
   The technological stack:
 
