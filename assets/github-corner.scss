@@ -1,11 +1,12 @@
 .github-corner > svg {
   fill: orange;
   color:#fff;
-  opacity: 75%;
+  opacity: 80%;
   position: absolute;
   top: 0;
   border: 0;
-  right: 0;
+  left: 0;
+  transform: scale(-1, 1);
 }
 
 .github-corner .octo-arm {
@@ -22,11 +23,12 @@
   40%, 80% { transform: rotate(10deg) }
 }
 
-@media (max-width: $breakpoint + 1){
+@media (max-width: $breakpoint - 1) {
   .github-corner:hover .octo-arm{
-    animation: none
+    animation: none;
   }
-  .github-corner .octo-arm{
-    animation: octocat-wave 560ms ease-in-out
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
   }
 }

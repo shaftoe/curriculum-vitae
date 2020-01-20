@@ -9,7 +9,7 @@ $sections: about, work, education, skills, programming, languages, community, ho
   box-sizing: border-box;
 }
 
-body, p, h1, h2, h3, h4, figure {
+body, p, h1, h2, h3, h4, figure, article, section {
   margin: 0;
   padding: 0;
 }
@@ -76,13 +76,10 @@ h3, h4 { // make title stick on top
   position: sticky;
 }
 
-article {
-  margin: 6vmin;
-}
-
 section {
+  padding-left: 1em;
+  padding-right: 1em;
   margin-bottom: 1em;
-
 }
 
 section:not([class=work]) li > p {
@@ -162,10 +159,10 @@ header {
   flex-flow: column nowrap;
   align-items: center;
 
-  margin-bottom: 1.5em;
-  text-align: center;
+  margin: 1.5em 0;
 
   #nameandtitle {
+    text-align: center;
     padding-top: 1em;
   }
 
