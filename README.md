@@ -25,8 +25,9 @@ Regardless of the technology used, since long you can always find the most up-to
 
 Please feel free to fork this repo, just remember to **clean up** the content from:
 
-- `content/*.md` files (my actual curriculum data)
-- `config.toml` (base URL, name, job title and links to profile photo and GitHub repo)
+- `static/me.jpg`
+- `content/*.md` files (my actual curriculum info)
+- `config.toml` (base URL, name, job title and link to GitHub repo)
 - this very file: `README.md`
 
 **before publishing**. Everything else should be relatively abstract and possibly reusable.
