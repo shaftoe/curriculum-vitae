@@ -1,6 +1,15 @@
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
 article {
   max-width: 85vw;
   margin: 0 auto;
+  font-size: 1.3em;
 
   gap: 4vmin 3em;
   grid-template-columns: 2fr 1fr;
@@ -18,6 +27,10 @@ article {
     "community  ......"
     "references ......"
     "links      ......";
+}
+
+section {
+  padding: 0;
 }
 
 header {

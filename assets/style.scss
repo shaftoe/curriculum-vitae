@@ -21,9 +21,9 @@ ul {
 }
 
 // ### Typography and margins ###
-body {
-  font-family: roboto, sans-serif;
-  font-size: 20px;
+article {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
   line-height: 1.5;
 }
 
@@ -41,12 +41,10 @@ p + p {
 }
 
 h1 { // name
-  padding: 0;
-  font-size: 11vmin;
+  font-size: 2.8rem;
 }
 
 h2 { // title
-  font-size: 6vmin;
   color:$secondaryColor;
 }
 
@@ -94,6 +92,7 @@ section:not([class=work]) li > p {
 }
 
 article { // Main grid container
+  margin: auto;
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
