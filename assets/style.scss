@@ -1,6 +1,5 @@
 $secondaryColor: #FC9700;
 $breakpoint: 800px;
-$sections: about, work, education, skills, programming, languages, community, hobbies, links, certs;
 
 // ### Sane defaults ###
 *,
@@ -24,12 +23,6 @@ ul {
   list-style-type: square;
 }
 
-// ### Typography and margins ###
-main {
-  font-family: Helvetica, sans-serif;
-  line-height: 1.5;
-}
-
 a, a:active, a:hover  {
   color: $secondaryColor;
   text-decoration: none;
@@ -39,13 +32,13 @@ p {
   text-indent: 1em;
 }
 
-h1 { // name
+h1 {
   font-size: 2.7rem;
 }
 
-h2 { // title
+h2 {
   font-size: 1.5rem;
-  color:$secondaryColor;
+  color: $secondaryColor;
 }
 
 h1, h2 {
@@ -53,35 +46,18 @@ h1, h2 {
   text-decoration: none;
 }
 
-h3 { // section title (e.g. About)
+h3 {
   z-index: 1;
-
   font-size: 2rem;
   text-decoration: underline $secondaryColor;
   text-transform: capitalize;
 }
 
-section {
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 1em;
-
-  h3 {
-    a, a:active, a:hover {
-      color: inherit
-    }
-  }
-}
-
-// ### CSS grid ###
-@each $section in $sections { // create grid area names
-  .#{$section} {
-    grid-area: $section;
-  }
-}
-
-main { // Main grid container
+main { // Grid container
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
   margin: auto;
+
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
@@ -100,10 +76,6 @@ main { // Main grid container
     "links";
 }
 
-section.work {
-  @import 'work.scss';
-}
-
 header {
   grid-area: header;
 
@@ -113,7 +85,7 @@ header {
 
   margin: 1.5em 0;
 
-  #nameandtitle {
+  .nameandtitle {
     text-align: center;
     padding-top: 1em;
   }
@@ -129,6 +101,16 @@ header {
   }
 }
 
+section {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+
+section.work {
+  @import 'work.scss';
+}
+
 .sticky {
   position: sticky;
   // background-image: linear-gradient(white 90%, rgba(0,0,0,0));
@@ -136,8 +118,14 @@ header {
   top: 0;
 }
 
+.link-no-color {
+  a, a:hover, a:active {
+    color: inherit;
+  }
+}
+
 @media print, screen and (min-width: $breakpoint) {
-  @import 'style-desktop.scss';
+  @import 'large.scss';
 }
 
 @import 'github-corner.scss';

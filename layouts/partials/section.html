@@ -1,9 +1,13 @@
-<section class='{{ .File.BaseFileName }}'>
+{{ $name := .File.BaseFileName }}
+<section
+  class='{{ $name }}'
+  style='grid-area: {{ $name }}'
+>
 
-  <h3 class="sticky">
+  <h3 class="sticky link-no-color">
 
     <a
-      href="/{{ .File.BaseFileName }}/"
+      href="/{{ $name }}/"
     >
       {{ .Title }}
     </a>

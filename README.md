@@ -40,7 +40,7 @@ Everything else should be relatively abstract and possibly reusable.
 
 ## Tweaks
 
-- As it is well described in the CSS-Tricks article mentioned [below](#credits), named CSS `grid-template-areas` are used to position the various sections, which makes it pretty easy to update the current layout if needed (search for `grid-template-areas` in `assets/style.scss` and `assets/style-desktop.scss` for more details).
+- As it is well described in the CSS-Tricks article mentioned [below](#credits), named CSS `grid-template-areas` are used to position the various sections, which makes it pretty easy to update the current layout if needed (search for `grid-template-areas` in `assets/style.scss` and `assets/large.scss` for more details).
 - If you want to add more sections and/or jobs, be aware that a new `.md` content file needs to be created (via `hugo new new-section.md` or `hugo new work/my-last-workplace.md` for example).
 
 ## Deploy

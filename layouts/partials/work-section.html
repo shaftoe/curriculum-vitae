@@ -1,6 +1,14 @@
-<section class="{{ .Section }}">
+<section
+  class="{{ .Section }}"
+  style='grid-area: {{ .Section }}'
+>
 
-  <h3 class="sticky"><a href="/{{ .Section }}/" >Work experience</a></h3>
+  <h3 class="sticky link-no-color">
+    <a href="/{{ .Section }}/"
+    >
+      Work experience
+    </a>
+  </h3>
 
   <ul class="entries">
     {{ range (sort .Pages ".Date").Reverse }}

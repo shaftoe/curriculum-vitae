@@ -1,17 +1,24 @@
 <header>
 
   <figure>
-    <img
+    <a href='/'>
+      <img
       src="/me.jpg"
       alt="A portrait of myself"
       width="300"
       height="300"
     />
+    </a>
   </figure>
 
-  <div id="nameandtitle">
-    <h1>{{ $.Param "author" }}</h1>
-    <h2>{{ $.Param "workTitle" }}</h2>
+  <div class="nameandtitle">
+    <h1 class="link-no-color">
+      <a href="/">{{ $.Param "author" }}</a>
+    </h1>
+
+    <h2>
+      <a href="/">{{ $.Param "workTitle" }}</a>
+    </h2>
   </div>
 
 </header>

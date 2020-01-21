@@ -1,3 +1,9 @@
 {{ define "content" }}
-  {{ partial "single-page-section" . }}
+<section>
+
+  <h3>{{ .Title }}</h3>
+
+  {{ .Content }}
+
+</section>
 {{ end }}
