@@ -1,6 +1,5 @@
 ---
 title: "Social Links"
-class: "links"
 date: 2020-01-16T11:39:33+03:00
 ---
 

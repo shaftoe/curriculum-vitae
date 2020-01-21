@@ -1,6 +1,14 @@
-<section class='{{ .Params.class }}'>
+<section class='{{ .File.BaseFileName }}'>
 
-  <h3><a href="/{{ .Params.class }}/" >{{ .Title }}</a></h3>
+  <h3 class="sticky-header">
+
+    <a
+      href="/{{ .File.BaseFileName }}/"
+    >
+      {{ .Title }}
+    </a>
+
+  </h3>
 
   {{ .Content }}
 

@@ -2,7 +2,9 @@ header {
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
-  margin: 1em 0 0.5em;
+  margin: 1em 0 0;
+  padding-bottom: 1em;
+  top: 44px;
 }
 
 h4 {
@@ -37,7 +39,6 @@ li.job-entry {
 }
 
 ul ul {
-  padding-left: 1em;
   padding-top: 0.5em;
   list-style-type: square;
 

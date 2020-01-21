@@ -20,7 +20,7 @@ body {
 
 ul {
   margin: 0;
-  padding-left: 1em;
+  padding-left: 1.5em;
   list-style-type: square;
 }
 
@@ -54,10 +54,7 @@ h1, h2 {
 }
 
 h3 { // section title (e.g. About)
-  top: 0;
   z-index: 1;
-  background-color: white;
-  position: sticky;
 
   font-size: 2rem;
   text-decoration: underline $secondaryColor;
@@ -130,6 +127,13 @@ header {
       border-radius: 50%;
     }
   }
+}
+
+.sticky-header {
+  position: sticky;
+  // background-image: linear-gradient(white 90%, rgba(0,0,0,0));
+  background-color: white;
+  top: 0;
 }
 
 @media print, screen and (min-width: $breakpoint) {
