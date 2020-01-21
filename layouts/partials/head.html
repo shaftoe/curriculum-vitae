@@ -9,8 +9,6 @@
 
 <title>{{ .Site.Title }}</title>
 
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" /> -->
-
 {{ $cssResource := resources.Get "style.scss" | resources.ToCSS }}
 <link
   crossorigin="anonymous"
@@ -18,3 +16,6 @@
   rel="stylesheet"
   type="text/css"
 />
+
+<!-- https://stackoverflow.com/a/13416784 -->
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
