@@ -2,7 +2,7 @@
 
 {{ range .Pages }}
   {{ if eq .Section "work" }}
-    {{ partial "work" . }}
+    {{ partial "work-section" . }}
   {{ else }}
     {{ partial "section" . }}
   {{ end }}

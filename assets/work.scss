@@ -21,7 +21,7 @@ h5 {
   font-style: italic;
 }
 
-.job-title {
+.title {
   color: $secondaryColor;
 }
 
@@ -29,12 +29,12 @@ p {
   margin-top: 0.5em;
 }
 
-ul.job-list {
+ul.entries {
   padding: 0;
   list-style: none;
 }
 
-li.job-entry {
+li.entry {
   margin-bottom: 2em;
 }
 
