@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  margin: 1em 0 0.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  padding-left: 1em;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.time-period {
+  font-style: italic;
+}
+
+.job-title {
+  color: $secondaryColor;
+}
+
+p {
+  margin-top: 0.5em;
+}
+
+ul.job-list {
+  padding: 0;
+  list-style: none;
+}
+
+li.job-entry {
+  margin-bottom: 2em;
+}
+
+ul ul {
+  padding-left: 1em;
+  padding-top: 0.5em;
+  list-style-type: square;
+
+  li {
+    padding-bottom: unset;
+  }
+}

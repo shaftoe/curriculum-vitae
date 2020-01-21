@@ -46,9 +46,3 @@ header {
     text-align: left;
   }
 }
-
-section.work p:nth-of-type(2) { // make title stick on top
-  position: sticky;
-  top: 75px;
-  background-color: white;
-}

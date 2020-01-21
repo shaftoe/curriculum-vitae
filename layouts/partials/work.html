@@ -1,0 +1,24 @@
+<section class="work">
+
+  <h3><a href="/{{ .Params.class }}/" >{{ .Title }}</a></h3>
+
+  <ul class="job-list">
+    {{ range (sort .Pages ".Date").Reverse }}
+
+    <li class="job-entry">
+
+      <header>
+        <h4 class="workplace">{{ .Title }}</h4>
+        {{ if .Params.location }}<h5 class="location">{{ .Params.location }}</h5>{{ end }}
+        {{ if .Params.timePeriod }}<h5 class="time-period">{{ .Params.timePeriod }}</h5>{{ end }}
+        <h5 class="job-title">{{ .Params.jobTitle }}</h5>
+
+      </header>
+
+      {{ .Content }}
+    </li>
+
+  {{ end }}
+  </ul>
+
+</section>

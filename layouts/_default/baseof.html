@@ -12,7 +12,10 @@
       {{ partial "github-corner" . }}
     {{ end }}
 
-    {{ block "content" . }}{{ end }}
+    <article>
+      {{ partial "header" . }}
+      {{ block "content" . }}{{ end }}
+    </article>
   </body>
 
 </html>
