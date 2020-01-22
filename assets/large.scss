@@ -12,6 +12,7 @@ main {
   font-size: 1.3em;
 
   gap: 4vmin 3em;
+  grid-gap: 4vmin 3em;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "header     header"
@@ -38,7 +39,7 @@ header {
 
   figure {
     flex: 1;
-    order: 1; // move to the right
+    order: 1; // move image to the right
   }
 
   .nameandtitle {

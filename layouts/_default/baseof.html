@@ -9,7 +9,9 @@
 
   <body>
     {{ with $.Param "githubLink" }}
-      {{ partial "github-corner" . }}
+      <aside>
+        {{ partial "github-corner" . }}
+      </aside>
     {{ end }}
 
     <main>

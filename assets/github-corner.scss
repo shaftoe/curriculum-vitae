@@ -1,11 +1,7 @@
 .github-corner > svg {
-  fill: $secondaryColor;
+  fill: $primaryColor;
   color: white;
   opacity: 80%;
-  position: absolute;
-  top: 0;
-  border: 0;
-  left: 0;
   transform: scale(-1, 1);
 }
 

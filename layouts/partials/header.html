@@ -1,23 +1,27 @@
-<header>
+<header class="link-no-color">
 
   <figure>
-    <a href='/'>
+    <a href="/" title="Homepage">
       <img
-      src="/me.jpg"
-      alt="A portrait of myself"
-      width="300"
-      height="300"
-    />
+        src="/me.jpg"
+        alt="A portrait of myself"
+        width="300"
+        height="300"
+      />
     </a>
   </figure>
 
   <div class="nameandtitle">
-    <h1 class="link-no-color">
-      <a href="/">{{ $.Param "author" }}</a>
+    <h1>
+      <a href="/" title="Homepage">
+        {{ $.Param "author" }}
+      </a>
     </h1>
 
     <h2>
-      <a href="/">{{ $.Param "workTitle" }}</a>
+      <a href="/" title="Homepage">
+        {{ $.Param "workTitle" }}
+      </a>
     </h2>
   </div>
 
