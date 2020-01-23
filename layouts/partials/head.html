@@ -11,11 +11,19 @@
 
 {{ $cssResource := resources.Get "style.scss" | resources.ToCSS }}
 <link
+  rel="stylesheet"
   crossorigin="anonymous"
   href="{{ $cssResource.RelPermalink }}"
-  rel="stylesheet"
   type="text/css"
-/>
+>
+
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto"
+>
 
 <!-- https://stackoverflow.com/a/13416784 -->
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<link
+  rel="icon"
+  href="data:;base64,iVBORw0KGgo="
+>

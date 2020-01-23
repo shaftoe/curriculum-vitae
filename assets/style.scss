@@ -45,7 +45,7 @@ aside {
 }
 
 main { // Grid container
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   line-height: 1.5;
   margin: auto;
 
@@ -128,7 +128,13 @@ section.work {
     ref: https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
   */
 
-  svg {
+  .sticky {
+    position: unset;
+    background-color: unset;
+    top: unset;
+  }
+
+  aside {
     display: none;
   }
 
