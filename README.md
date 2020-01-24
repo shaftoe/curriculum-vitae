@@ -57,6 +57,12 @@ Everything else should be relatively abstract and reusable _as is_.
 
 ## Deploy
 
+You could evaluate to install [Stylelint][stylelint] and [Html5validator][html5validator], then add `make pre-commit` as a pre-commit hook, e.g.:
+
+    MY_HOOK=.git/hooks/pre-commit
+    echo make pre-commit > $MY_HOOK
+    chmod +x $MY_HOOK
+
 I'm using [Netlify][netlify] to automate deployment at each new commit pushed to `origin/master`, see the [official documentation][netlify-docs] if you want to know more about their CI/CD features.
 
 PS Netlify supports latest Hugo (stable) version.
@@ -79,3 +85,5 @@ Many thanks to:
 [netlify-docs]:           <https://docs.netlify.com/site-deploys/overview/>
 [netlify]:                <https://www.netlify.com/>
 [studio-compresso]:       <https://www.studiocompresso.com/en/>
+[stylelint]:              <https://stylelint.io/>
+[html5validator]:         <https://pypi.org/project/html5validator/>

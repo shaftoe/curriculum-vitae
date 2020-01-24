@@ -1,4 +1,4 @@
-$primaryColor: #FC9700;
+$primaryColor: #fc9700;
 $breakpoint: 800px;
 
 @import 'reset.scss';
@@ -8,7 +8,9 @@ ul {
   list-style-type: square;
 }
 
-a, a:active, a:hover  {
+a,
+a:active,
+a:hover {
   color: $primaryColor;
   text-decoration: none;
 }
@@ -26,7 +28,8 @@ h2 {
   color: $primaryColor;
 }
 
-h1, h2 {
+h1,
+h2 {
   line-height: initial;
   text-decoration: none;
 }
@@ -48,7 +51,6 @@ main { // Grid container
   font-family: 'Roboto', Helvetica, sans-serif;
   line-height: 1.5;
   margin: auto;
-
   display: grid;
   gap: 1em; // https://developer.mozilla.org/en-US/docs/Web/CSS/gap
   grid-gap: 1em;
@@ -70,11 +72,9 @@ main { // Grid container
 
 header {
   grid-area: header;
-
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-
   margin: 1.5em 0;
 
   .nameandtitle {
@@ -111,7 +111,9 @@ section.work {
 }
 
 .link-no-color {
-  a, a:hover, a:active {
+  a,
+  a:hover,
+  a:active {
     color: inherit;
   }
 }
@@ -138,7 +140,8 @@ section.work {
     display: none;
   }
 
-  main, p {
+  main,
+  p {
     font-size: inherit;
   }
 
@@ -147,13 +150,15 @@ section.work {
     max-height: 200px;
   }
 
-  a, a:hover, a:active {
+  a,
+  a:hover,
+  a:active {
     text-decoration: none;
   }
 }
 
 @page {
   padding: 0;
-  margin: 0cm;
+  margin: 0;
   size: A4 portrait;
 }

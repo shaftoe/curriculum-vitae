@@ -1,5 +1,5 @@
 [build]
-command = "hugo --gc --minify --verbose"
+command = "make build lint"
 
 [context.production.environment]
   HUGO_VERSION = "0.62.2"
