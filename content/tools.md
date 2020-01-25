@@ -11,7 +11,7 @@ date: 2020-01-19T04:52:32+03:00
 - VSCode / Vim / Git
 - Vagrant
 - FaaS (Lambda / Serverless)
-- Hugo
+- Hugo / Jekyll
 - Vue.js
-- Cypress
+- Mocha / Chai / Cypress
 - Sketch / Figma
