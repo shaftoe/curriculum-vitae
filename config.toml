@@ -5,4 +5,5 @@ title = "Alexander Fortin's curriculum vitae"
 [params]
   author = "Alexander Fortin"
   workTitle = "Full Stack Software Engineer"
+  description = "Alexander Fortin's curriculum vitae, always up to date and available as an accessible responsive web site"
   githubLink = "https://github.com/shaftoe/curriculum-vitae"

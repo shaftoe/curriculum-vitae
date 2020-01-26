@@ -5,7 +5,12 @@
   content="width=device-width, initial-scale=1"
 >
 
-<!-- TODO add meta tags for SEO -->
+{{ with $.Param "description" }}
+<meta
+  name="description"
+  content="{{ . }}"
+>
+{{ end }}
 
 <title>{{ .Site.Title }}</title>
 

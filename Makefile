@@ -14,3 +14,6 @@ build-quiet:
 
 pre-commit: build-quiet lint
 	@rm -r public/
+
+server:
+	@hugo server
