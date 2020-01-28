@@ -6,6 +6,7 @@ draft: false
 
 - cloud infrastructure design, deployment and management
 - SRE/DevOps methodologies
+- automation
 - full-stack software development
 - Unix system administration
 - responsive web designs with HTML5 + CSS3
