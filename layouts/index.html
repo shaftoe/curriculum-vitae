@@ -1,6 +1,6 @@
 {{ define "content" }}
 
-{{ range .Pages }}
+{{ range .Pages.ByWeight }}
   {{ if eq .Section "work" }}
     {{ partial "work-section" . }}
   {{ else }}

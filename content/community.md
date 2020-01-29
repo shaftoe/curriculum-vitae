@@ -1,6 +1,6 @@
 ---
 title: "Community projects"
-date: 2020-01-16T11:33:14+03:00
+weight: 8
 ---
 
 - [Home Assistant](https://www.home-assistant.io/) — Open Source home automation platform - plugins and bug fixes

@@ -1,6 +1,6 @@
 ---
 title: "External Links"
-date: 2020-01-16T11:39:33+03:00
+weight: 10
 ---
 
 - Tech Blog:  <https://a.l3x.in/>

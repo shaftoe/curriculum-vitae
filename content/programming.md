@@ -1,6 +1,6 @@
 ---
 title: "Computer languages"
-date: 2020-01-19T04:49:58+03:00
+weight: 6
 ---
 
 - Python
@@ -8,4 +8,3 @@ date: 2020-01-19T04:49:58+03:00
 - Bash
 - Ruby
 - Go
-

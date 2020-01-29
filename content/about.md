@@ -1,6 +1,6 @@
 ---
 title: "About me"
-date: 2020-01-16T11:14:01+03:00
+weight: 1
 ---
 
 I'm a Full Stack Software Engineer with a strong background as a Linux system administrator at scale.

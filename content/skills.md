@@ -1,7 +1,7 @@
 ---
 title: "Skills"
 date: 2020-01-16T11:35:32+03:00
-draft: false
+weight: 3
 ---
 
 - cloud (AWS) infrastructure design, deployment and management (IaaS)

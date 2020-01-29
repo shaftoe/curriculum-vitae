@@ -118,47 +118,8 @@ section.work {
   }
 }
 
-@media print, screen and (min-width: $breakpoint) {
-  @import 'large.scss';
-}
-
 @import 'github-corner.scss';
 
-@media print {
-  /*
-    TODO some tweaks still needed here
-    ref: https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
-  */
+@media print, screen and (min-width: $breakpoint) { @import 'large.scss'; }
 
-  .sticky {
-    position: unset;
-    background-color: unset;
-    top: unset;
-  }
-
-  aside {
-    display: none;
-  }
-
-  main,
-  p {
-    font-size: inherit;
-  }
-
-  img {
-    max-width: 200px;
-    max-height: 200px;
-  }
-
-  a,
-  a:hover,
-  a:active {
-    text-decoration: none;
-  }
-}
-
-@page {
-  padding: 0;
-  margin: 0;
-  size: A4 portrait;
-}
+@media print { @import 'print.scss'; }
