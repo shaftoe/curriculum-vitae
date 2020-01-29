@@ -3,12 +3,16 @@ title: "About me"
 date: 2020-01-16T11:14:01+03:00
 ---
 
-Soon after my discovery of GNU/Linux, sometime around 1996, my life changed dramatically, with Open Source software becoming something between a passion and a de-facto obsession. I still remember the sweat and long hours reading the little and sometimes exoteric documentation I had, trying to get an ADSL modem work. The elation once I first saw a web page displaying on my desktop (at that time I was running some Linux flavor called _Mandrake_) is still vivid in my memory, for the young me that was an intellectually very satisfying feat and, well, hooked me for good.
+I'm a Full Stack Software Engineer with a strong background as a Linux system administrator at scale.
 
-During my early twenties at engineering university I managed to complete the first theoretical exams but, as soon as I got my hands dirty with real projects, I felt the strong need to drop out and pursue some more _concrete_ kind of work.
+I've been passionate about configuring and managing networks and servers since the first day Linux was running on my (i486) workstation.
 
-Since then I've travelled the planet far and abroad, assuming each time different roles in the Information Technology industry, both as a freelancer and as part of a team. After inception as Junior Linux System Administrator, I went from _system engineer_ to _DevOps engineer_ to _site reliability engineer_ to... who knows what else the future will bring.
+Traditionally my focus has been on finding processes and workflows weak spots, remove or at least simplify them as much as possible with the heavy use of automation/configuration management tools like Puppet, Ansible, Boto and others.
 
-With each new role name failing to properly define the actual day-to-day work, I since long preferred to say _"I work in Operations"_ which seemed to satisfy most of the people in the field, but still left me somehow unsatisfied. The past 20 years brought some sensible advances in the way of work, bringing in powerful methodologies and tools from the broad dev community, design patterns, code testing, code reviews, revision control, to name only a few.
+I'm an advocate of Free and Open Source technologies and I'm happy to give my contribution to the community every time I have the chance, both writing code, updating documentation and providing mentoring/coaching when needed.
 
-At some point while [automating all the things](http://www.anchor.com.au/blog/2011/08/automate-all-the-things/), I suddenly realized my mental barrier between Dev and Ops was broken, hence embracing the early DevOps movement with enthusiasm. While learning the core values, adopting the tools and methodologies and, most importantly, putting them in practice every working day, once in a while I found the chance to attend the DevOps conferences, representing to me the best moments still to exchange ideas _live_ with other tech peers. With Puppet, the Config Management System ubiquitous in those years, was love at first script, it quickly helped me to manage configuration complexity, boosted productivity and gave me confidence while managing server fleets of increasing magnitudes.
+I've been an early _cloud_ (IaaS) adopter and I have been running production workloads on AWS Ec2 (and others) since 2008.
+
+Recently I developed a new passion for web technologies coupled with new development paradigms like Jamstack and Serverless.
+
+I'm eager to share my 20 years long experience and know-how to whomever has a genuine interest in these new approaches.

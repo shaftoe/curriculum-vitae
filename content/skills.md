@@ -4,10 +4,11 @@ date: 2020-01-16T11:35:32+03:00
 draft: false
 ---
 
-- cloud infrastructure design, deployment and management
+- cloud (AWS) infrastructure design, deployment and management (IaaS)
 - SRE/DevOps methodologies
-- automation
+- team leadership, coaching and mentoring
+- CI/CD pipelines deployment and orchestration
 - full-stack software development
-- Unix system administration
-- responsive web designs with HTML5 + CSS3
-- leadership
+- Jamstack / Serverless
+- responsive web designs
+- Linux system administration

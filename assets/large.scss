@@ -15,7 +15,7 @@ main {
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "header     header"
-    "work       skills"
+    "about      skills"
     "work       programming"
     "work       tools"
     "work       languages"
@@ -23,7 +23,6 @@ main {
     "work       certs"
     "work       hobbies"
     "work       ......"
-    "about      ......"
     "community  ......"
     "references ......"
     "links      ......";
