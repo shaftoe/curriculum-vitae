@@ -10,9 +10,9 @@ Regardless of the technology used, since long you can always find the most up-to
 
 - easy to keep updated: all the actual content is filed under [`content/`](content), formatted in [Markdown][markdown]
 - simply reshuffle the layout editing one CSS property
-- fast load times, [Google Insights][insights] gives 100% thumbs up
+- fast load times, [Google Insights][insights] gives 99% thumbs up
 - displays decently on any modern web browser (including low-end smartphones and screen readers)
-- unadorned printable version (A4 for paper print or PDF)
+- unadorned printable layout used by the browser _Print_ function
 - single section views exposed as `/<section name>/`, e.g. <https://cv.l3x.in/about/>
 
 ## Tech
@@ -50,10 +50,15 @@ Everything else should be relatively abstract and reusable _as is_.
 
   Search for `grid-template-areas` in [assets/style.scss](assets/style.scss) and [assets/large.scss](assets/large.scss) for current implementation.
 
-- If you want to add more sections and/or jobs, be aware that a new Markdown content file needs to be created, e.g:
+- If you want to add more sections and/or jobs a new Markdown content file needs to be created, e.g:
 
   - `hugo new new-section.md`
   - `hugo new work/my-last-workplace.md`
+
+## Caveats
+
+- the file name (without `.md`) of new added content will be used as CSS class, remember to add it somewhere in `grid-template-areas` in order to properly position the new section
+- the `title` defined in the [front matter][frontmatter] will be displayed as section/work title
 
 ## Deploy
 
@@ -65,7 +70,7 @@ You could evaluate to install [Stylelint][stylelint] and [Html5validator][html5v
 
 I'm using [Netlify][netlify] to automate deployment at each new commit pushed to `origin/master`, see the [official documentation][netlify-docs] if you want to know more about their CI/CD features.
 
-PS Netlify supports latest Hugo (stable) version.
+PS Netlify promptly adds support for latest Hugo (stable) version as soon as it is released.
 
 ## Credits
 
@@ -87,3 +92,4 @@ Many thanks to:
 [studio-compresso]:       <https://www.studiocompresso.com/en/>
 [stylelint]:              <https://stylelint.io/>
 [html5validator]:         <https://pypi.org/project/html5validator/>
+[frontmatter]:            <https://gohugo.io/content-management/front-matter/>
