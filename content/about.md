@@ -13,6 +13,6 @@ I'm an advocate of Free and Open Source technologies and I'm happy to give my co
 
 I've been an early _cloud_ (IaaS) adopter and I have been running production workloads on AWS Ec2 (and others) since 2008.
 
-Recently I developed a new passion for web technologies coupled with new development paradigms like Jamstack and Serverless.
+[Recently](https://a.l3x.in/2020/01/29/my-quest-for-identity-in-software-engineering.html) I developed a new passion for web technologies coupled with new development paradigms like Jamstack and Serverless.
 
 I'm eager to share my 20 years long experience and know-how to whomever has a genuine interest in these new approaches.
