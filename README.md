@@ -10,7 +10,7 @@ Regardless of the technology used, since long you can always find the most up-to
 
 - easy to keep updated: all the actual content is filed under [`content/`](content), formatted in [Markdown][markdown]
 - simply reshuffle the layout editing one CSS property
-- fast load times, [Google Insights][insights] gives 100% thumbs up
+- fast load times, [Google Insights][insights] gives 99% thumbs up for both mobile and desktop
 - displays decently on any modern web browser (including low-end smartphones and screen readers)
 - unadorned printable layout used by the browser _Print_ function
 - single section views exposed as `/<section name>/`, e.g. <https://cv.l3x.in/about/>
