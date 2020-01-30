@@ -1,7 +1,10 @@
 // Thanks to https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
 // for some of the tips
 
-@page { margin: 2cm; }
+@page {
+  margin: 2cm;
+  size: A4 portrait;
+}
 
 main {
   width: 100%;
