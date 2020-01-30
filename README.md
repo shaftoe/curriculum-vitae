@@ -58,6 +58,7 @@ Everything else should be relatively abstract and reusable _as is_.
 
 - the file name (without `.md`) of new added content will be used as CSS class, remember to add it somewhere in `grid-template-areas` in order to properly position the new section
 - the `title` defined in the [front matter][frontmatter] will be displayed as section/work title
+- grid order defined with `grid-template-areas` [is not respected](https://stackoverflow.com/a/59992837/2274124) when printing with Firefox, the normal ([weighted](https://gohugo.io/templates/lists/#by-weight)) markup order of content sections is used instead
 
 ## Deploy
 
