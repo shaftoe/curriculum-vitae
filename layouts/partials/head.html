@@ -41,7 +41,7 @@
 
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto"
+  href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
 >
 
 <!-- https://stackoverflow.com/a/13416784 -->
@@ -53,3 +53,13 @@
 {{ if eq hugo.Environment "production" }}
   {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
+
+<!-- https://web.dev/font-display -->
+<style type="text/css">
+@font-face {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-style: normal;
+  src: local('Roboto'), local('Helvetica'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  font-display: swap;
+}
+</style>
