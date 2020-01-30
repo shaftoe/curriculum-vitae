@@ -12,9 +12,8 @@
       {{ partial "github-corner" . }}
     {{ end }}
 
-    {{ partial "header" . }}
-
     <main>
+      {{ partial "header" . }}
       {{ block "content" . }}{{ end }}
       {{ partial "footer" . }}
     </main>

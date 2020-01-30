@@ -43,7 +43,6 @@ Everything else should be relatively abstract and reusable _as is_.
 - As it is well described in the CSS-Tricks article mentioned [below in the _credits_ section](#credits), named CSS `grid-template-areas` are used to position the various sections on the viewport, which makes it pretty easy to update the current layout when needed. For example:
 
       grid-template-areas:    =>      grid-template-areas:
-        "header header"       =>        "header header"
         "work   skills"       =>        "about  skills"
         "work   ......"       =>        "work   work"
         "about  ......";      =>        "work   work";
