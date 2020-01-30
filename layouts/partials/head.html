@@ -14,12 +14,29 @@
 
 <title>{{ .Site.Title }}</title>
 
-{{ $cssResource := resources.Get "style.scss" | resources.ToCSS }}
+{{ $mainStyle := resources.Get "style.scss" | resources.ToCSS }}
 <link
   rel="stylesheet"
   crossorigin="anonymous"
-  href="{{ $cssResource.RelPermalink }}"
+  href="{{ $mainStyle.RelPermalink }}"
   type="text/css"
+>
+
+<!-- https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css -->
+{{ $largeStyle := resources.Get "large.scss" | resources.ToCSS }}
+<link
+  rel="stylesheet"
+  href="{{ $largeStyle.RelPermalink }}"
+  type="text/css"
+  media="screen and (min-width: 800px)"
+>
+
+{{ $printStyle := resources.Get "print.scss" | resources.ToCSS }}
+<link
+  rel="stylesheet"
+  href="{{ $printStyle.RelPermalink }}"
+  type="text/css"
+  media="print"
 >
 
 <link

@@ -119,7 +119,3 @@ section.work {
 }
 
 @import 'github-corner.scss';
-
-@media screen and (min-width: $breakpoint) { @import 'large.scss'; }
-
-@media print { @import 'print.scss'; }
