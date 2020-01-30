@@ -71,7 +71,7 @@ aside {
     "links";
 }
 
-.content {
+main {
   margin: 0 auto 1em;
   padding-left: 1em;
   padding-right: 1em;
@@ -97,6 +97,13 @@ header {
       border-radius: 50%;
     }
   }
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  padding: 2rem 0 1rem;
 }
 
 section.work {

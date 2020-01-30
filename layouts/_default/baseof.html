@@ -14,7 +14,10 @@
 
     {{ partial "header" . }}
 
-    <main>{{ block "content" . }}{{ end }}</main>
+    <main>
+      {{ block "content" . }}{{ end }}
+      {{ partial "footer" . }}
+    </main>
 
   </body>
 
