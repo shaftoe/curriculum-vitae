@@ -6,7 +6,7 @@
   size: A4 portrait;
 }
 
-main {
+.content {
   width: 100%;
   margin: 0;
   font-size: 13pt;
@@ -31,7 +31,7 @@ h3 {
   top: initial;
 }
 
-aside {
+.no-print {
   display: none;
 }
 
@@ -58,4 +58,10 @@ section.work {
     page-break-before: avoid;
     page-break-after: avoid;
   }
+}
+
+@import 'horizontal-header.scss';
+
+header {
+  max-width: initial;
 }

@@ -9,15 +9,13 @@
 
   <body>
     {{ with $.Param "githubLink" }}
-      <aside>
-        {{ partial "github-corner" . }}
-      </aside>
+      {{ partial "github-corner" . }}
     {{ end }}
 
-    <main>
-      {{ partial "header" . }}
-      {{ block "content" . }}{{ end }}
-    </main>
+    {{ partial "header" . }}
+
+    <main>{{ block "content" . }}{{ end }}</main>
+
   </body>
 
 </html>

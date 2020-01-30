@@ -1,5 +1,6 @@
 {{ define "content" }}
 
+<article class="content grid-container">
 {{ range .Pages.ByWeight }}
   {{ if eq .Section "work" }}
     {{ partial "work-section" . }}
@@ -7,5 +8,6 @@
     {{ partial "section" . }}
   {{ end }}
 {{ end }}
+</article>
 
 {{ end }}

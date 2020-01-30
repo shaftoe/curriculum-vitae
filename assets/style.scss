@@ -3,6 +3,11 @@ $breakpoint: 800px;
 
 @import 'reset.scss';
 
+html {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
 ul {
   padding-left: 1.5em;
   list-style-type: square;
@@ -47,16 +52,12 @@ aside {
   left: 0;
 }
 
-main { // Grid container
-  font-family: 'Roboto', Helvetica, sans-serif;
-  line-height: 1.5;
-  margin: auto;
+.grid-container {
   display: grid;
   gap: 1em; // https://developer.mozilla.org/en-US/docs/Web/CSS/gap
   grid-gap: 1em;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "header"
     "about"
     "work"
     "skills"
@@ -70,8 +71,13 @@ main { // Grid container
     "links";
 }
 
+.content {
+  margin: 0 auto 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 header {
-  grid-area: header;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -91,12 +97,6 @@ header {
       border-radius: 50%;
     }
   }
-}
-
-section {
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 1em;
 }
 
 section.work {
@@ -120,6 +120,6 @@ section.work {
 
 @import 'github-corner.scss';
 
-@media print, screen and (min-width: $breakpoint) { @import 'large.scss'; }
+@media screen and (min-width: $breakpoint) { @import 'large.scss'; }
 
 @media print { @import 'print.scss'; }

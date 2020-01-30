@@ -1,0 +1,16 @@
+header {
+  max-width: 85vw;
+  margin: 1.5rem auto 2.5rem;
+  margin-top: 1rem;
+  flex-direction: row;
+
+  figure {
+    flex: 1;
+    order: 1; // move image to the right
+  }
+
+  .nameandtitle {
+    flex: 2;
+    text-align: left;
+  }
+}
