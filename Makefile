@@ -16,4 +16,4 @@ pre-commit: build-quiet lint
 	@rm -r public/
 
 server:
-	@hugo server
+	@hugo server --environment dev

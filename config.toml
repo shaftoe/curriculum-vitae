@@ -1,6 +1,8 @@
 baseURL = "https://cv.l3x.in"
 languageCode = "en-us"
 title = "Alexander Fortin's curriculum vitae"
+googleAnalytics = "UA-157359136-1"
+enableGitInfo = true
 
 [params]
   author = "Alexander Fortin"

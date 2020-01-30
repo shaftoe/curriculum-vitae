@@ -10,7 +10,7 @@ Regardless of the technology used, since long you can always find the most up-to
 
 - easy to keep updated: all the actual content is filed under [`content/`](content), formatted in [Markdown][markdown]
 - simply reshuffle the layout editing one CSS property
-- fast load times, [Google Insights][insights] gives 99% thumbs up
+- fast load times, [Google Insights][insights] gives 100% thumbs up
 - displays decently on any modern web browser (including low-end smartphones and screen readers)
 - unadorned printable layout used by the browser _Print_ function
 - single section views exposed as `/<section name>/`, e.g. <https://cv.l3x.in/about/>
@@ -85,7 +85,7 @@ Many thanks to:
 [hugo-partials]:          <https://gohugo.io/templates/partials/>
 [hugo-scss]:              <https://gohugo.io/hugo-pipes/scss-sass/>
 [hugo-section-templates]: <https://gohugo.io/templates/section-templates/>
-[insights]:               <https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcv.l3x.in%2F> "Google Insights page results for <https://cv.l3x.in/>"
+[insights]:               <https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcv.l3x.in%2F&tab=desktop> "Google Insights page results for https://cv.l3x.in/"
 [markdown]:               <https://www.markdownguide.org/>
 [netlify-docs]:           <https://docs.netlify.com/site-deploys/overview/>
 [netlify]:                <https://www.netlify.com/>

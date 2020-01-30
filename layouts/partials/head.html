@@ -32,3 +32,7 @@
   rel="icon"
   href="data:;base64,iVBORw0KGgo="
 >
+
+{{ if eq hugo.Environment "production" }}
+  {{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
