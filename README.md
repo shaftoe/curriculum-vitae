@@ -1,6 +1,6 @@
 # A curriculum vitæ built with modern web technologies
 
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0) [![Netlify Status](https://api.netlify.com/api/v1/badges/53c5b088-2498-40b4-8e82-8f6ae243713c/deploy-status)](https://app.netlify.com/sites/hopeful-johnson-2088ad/deploys)
+[![google-insights](https://img.shields.io/badge/Google%20Insights-FAST-green)][insights] [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)][license] [![Netlify Status](https://api.netlify.com/api/v1/badges/53c5b088-2498-40b4-8e82-8f6ae243713c/deploy-status)][deploys]
 
 A simple and effective way to keep the CV up to date and always available as an (accessible and blazing fast) web site.
 
@@ -93,3 +93,5 @@ Many thanks to:
 [stylelint]:              <https://stylelint.io/>
 [html5validator]:         <https://pypi.org/project/html5validator/>
 [frontmatter]:            <https://gohugo.io/content-management/front-matter/>
+[license]:                <https://opensource.org/licenses/Apache-2.0>
+[deploys]:                <https://app.netlify.com/sites/hopeful-johnson-2088ad/deploys>
