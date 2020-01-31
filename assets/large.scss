@@ -17,6 +17,11 @@ main {
   font-size: 1.3em;
 }
 
+.scroll-up {
+  bottom: initial;
+  top: 1rem;
+}
+
 .grid-container {
   gap: 4vmin 3em;
   grid-gap: 4vmin 3em;
