@@ -1,7 +1,10 @@
 [build]
-command = "make build lint"
+  command = "make build lint"
 
-[context.production.environment]
+[build.environment]
   HUGO_VERSION = "0.63.2"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+
+[context.dev.environment]
+  HUGO_ENV = "dev"
