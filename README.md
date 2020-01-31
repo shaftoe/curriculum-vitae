@@ -6,6 +6,8 @@ A simple and effective way to keep the CV up to date and always available as an 
 
 Regardless of the technology used, since long you can always find the most up-to-date version of my CV at <https://cv.l3x.in/>.
 
+Blog post: <https://a.l3x.in/2020/01/31/updating-curriculum-with-web-tech.html>
+
 ## Features
 
 - easy to keep updated: all the actual content is filed under [`content/`](content), formatted in [Markdown][markdown]
