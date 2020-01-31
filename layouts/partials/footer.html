@@ -1,7 +1,45 @@
-<footer class="no-print">
+<footer>
+
+  {{ with $.Param "githubLink" }}
+  <aside>
+    <a
+      class="github-corner"
+      href="{{ . }}"
+      aria-label="View the source code of this document on GitHub"
+    >
+      {{ partial "github-corner" }}
+    </a>
+  </aside>
+  {{ end }}
+
+  <a href="#main" class="scroll-up" aria-label="Scroll to the top of the document">
+    {{ partial "top-icon" . }}
+  </a>
+
+  <small>
+    <em>Top</em> icon made by
+
+    <a
+      href="https://www.flaticon.com/authors/vectors-market"
+      title="Vectors Market"
+    >
+      Vectors Market
+    </a>
+
+    from
+
+    <a
+      href="https://www.flaticon.com/"
+      title="Flaticon"
+    >
+      www.flaticon.com
+    </a>
+  </small>
+
   <small>
     Last update: <em>{{ dateFormat "02 Jan 2006 15:04" now.UTC }}</em>
     -
     &copy; {{ now.Format "2006"}} {{ $.Param "author"}}
   </small>
+
 </footer>

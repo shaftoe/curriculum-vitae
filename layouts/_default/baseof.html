@@ -8,11 +8,8 @@
   </head>
 
   <body>
-    {{ with $.Param "githubLink" }}
-      {{ partial "github-corner" . }}
-    {{ end }}
 
-    <main>
+    <main id="main">
       {{ partial "header" . }}
       {{ block "content" . }}{{ end }}
       {{ partial "footer" . }}
