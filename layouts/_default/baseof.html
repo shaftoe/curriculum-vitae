@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 {{ with .Site.Language.Lang }}
 <html lang="{{ . }}">
 {{ end }}
@@ -14,6 +15,8 @@
       {{ block "content" . }}{{ end }}
       {{ partial "footer" . }}
     </main>
+
+    {{ partial "aside" . }}
 
   </body>
 
