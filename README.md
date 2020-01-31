@@ -79,7 +79,7 @@ Many thanks to:
 - [Ali Churcher](https://css-tricks.com/author/alichurcher/) for her [excellent CSS-Tricks article][css-tricks-article] which gave me the idea in the first place
 - Tim Holman for the [modern take](http://tholman.com/github-corners/) on the _fork me on Github_ link (in pure SVG!)
 - [Netlify][netlify] for their amazing platform and (free) services
-- Francesco Albanese of [Studio Compresso][studio-compresso] for continuous feedback plus shooting the profile picture
+- Francesco Albanese of [Studiocompresso][studio-compresso] for continuous feedback plus shooting the profile picture
 
 [css-tricks-article]:     <https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/>
 [hugo-partials]:          <https://gohugo.io/templates/partials/>
