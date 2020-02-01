@@ -14,13 +14,19 @@
 
 <title>{{ .Site.Title }}</title>
 
-{{ $mainStyle := resources.Get "style.scss" | resources.ToCSS }}
-<link
-  rel="stylesheet"
-  crossorigin="anonymous"
-  href="{{ $mainStyle.RelPermalink }}"
-  type="text/css"
->
+<style type="text/css">
+{{ with resources.Get "style.scss" | toCSS | minify }}
+  {{ .Content | safeCSS }}
+{{ end }}
+
+/* https://web.dev/font-display */
+@font-face {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-style: normal;
+  src: local('Roboto'), local('Helvetica'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  font-display: swap;
+}
+</style>
 
 <!-- https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css -->
 {{ $largeStyle := resources.Get "large.scss" | resources.ToCSS }}
@@ -54,12 +60,3 @@
   {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 
-<!-- https://web.dev/font-display -->
-<style type="text/css">
-@font-face {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  font-style: normal;
-  src: local('Roboto'), local('Helvetica'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-  font-display: swap;
-}
-</style>

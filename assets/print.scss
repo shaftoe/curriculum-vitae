@@ -38,6 +38,7 @@ h3 {
   top: initial;
 }
 
+aside,
 footer {
   display: none;
 }
@@ -55,7 +56,7 @@ h3 {
   text-decoration: none;
 }
 
-// https://stackoverflow.com/a/59992837/2274124
+// workaround Firefox bug: https://stackoverflow.com/a/59992837/2274124
 .grid-container {
   display: block;
 
