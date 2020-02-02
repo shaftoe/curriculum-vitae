@@ -32,15 +32,12 @@ h3 {
   font-size: 18pt;
 }
 
-.sticky {
-  position: initial;
-  background-color: initial;
-  top: initial;
+.no-print {
+  display: none;
 }
 
-aside,
-footer {
-  display: none;
+.print-only {
+  display: initial;
 }
 
 img {
@@ -54,6 +51,12 @@ a:active,
 h3 {
   color: inherit;
   text-decoration: none;
+}
+
+.sticky {
+  position: initial;
+  background-color: initial;
+  top: initial;
 }
 
 // workaround Firefox bug: https://stackoverflow.com/a/59992837/2274124

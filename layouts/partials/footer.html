@@ -1,6 +1,6 @@
 <footer>
 
-  <small>
+  <small class="no-print">
     <em>Top</em> icon made by
 
     <a
@@ -20,10 +20,17 @@
     </a>
   </small>
 
-  <small>
+  <small class="no-print">
     Last update: <em>{{ dateFormat "02 Jan 2006 15:04" now.UTC }}</em>
     -
     &copy; {{ now.Format "2006"}} {{ $.Param "author"}}
+  </small>
+
+  <small class="print-only">
+    The most up to date version of this document can be found at
+    <strong>
+      <a href="https://cv.l3x.in">https://cv.l3x.in</a>
+    </strong>
   </small>
 
 </footer>
