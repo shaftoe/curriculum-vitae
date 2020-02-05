@@ -14,5 +14,6 @@ weight: 5
 - FaaS (Lambda / Serverless)
 - Hugo / Jekyll
 - Vue.js
+- Webkit / Babel
 - Mocha / Chai / Cypress
 - Sketch / Figma
