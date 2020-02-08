@@ -12,6 +12,7 @@ weight: 5
 - Fabric
 - Jenkins / Travis CI / CircleCI
 - Vagrant / Docker
+- OAuth
 
 ## Frontend
 
