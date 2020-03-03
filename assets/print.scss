@@ -53,6 +53,14 @@ h3 {
   text-decoration: none;
 }
 
+// thanks to https://davidwalsh.name/optimize-your-links-for-print-using-css-show-url
+.links > ul > li {
+  a:link::after,
+  a:visited::after {
+    content: " - " attr(href);
+  }
+}
+
 .sticky {
   position: initial;
   background-color: initial;
