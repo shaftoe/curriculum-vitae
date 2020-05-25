@@ -32,4 +32,3 @@ The technological stack:
 - Datadog
 - OpenLDAP
 - data confidentiality with LUKS
-- ...

@@ -11,3 +11,4 @@ weight: 10
 - [Mastodon](https://fosstodon.org/@alex)
 - [Twitter](https://twitter.com/alexanderfortin)
 - [LinkedIn](http://www.linkedin.com/in/alexanderfortin)
+- [YouTube Channel](https://www.youtube.com/channel/UCb5FGNik4wXGrVGRS1x2JZw)
