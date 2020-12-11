@@ -4,7 +4,7 @@ weight: 6
 ---
 
 - Python
-- JavaScript
+- JavaScript/TypeScript
 - Bash
 - Ruby
 - Go

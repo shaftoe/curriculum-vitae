@@ -10,5 +10,5 @@ weight: 3
 - CI/CD pipelines deployment and orchestration
 - full-stack software development
 - Jamstack / Serverless
-- responsive web designs
+- responsive web
 - Linux system administration

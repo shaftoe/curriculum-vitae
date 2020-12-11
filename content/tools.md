@@ -15,5 +15,6 @@ weight: 5
 - Hugo / Jekyll
 - Vue.js
 - Webkit / Babel
+- NodeJS / Puppeteer
 - Mocha / Chai / Cypress
 - Sketch / Figma
