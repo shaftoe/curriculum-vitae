@@ -3,7 +3,7 @@ title: "Tools"
 weight: 5
 ---
 
-- Linux
+- Linux/macOS
 - AWS Cloud Development Kit
 - Terraform
 - Docker/Compose
