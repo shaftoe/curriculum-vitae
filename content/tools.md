@@ -3,10 +3,10 @@ title: "Tools"
 weight: 5
 ---
 
-- Linux/macOS
+- Linux / macOS
 - AWS Cloud Development Kit
 - Terraform
-- Docker/Compose
+- Docker / Compose
 - Vagrant
 - Ansible
 - Puppet
