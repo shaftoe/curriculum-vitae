@@ -100,7 +100,7 @@ footer {
 }
 
 section.work {
-  @import 'work.scss';
+  @import 'work.scss'; /* stylelint-disable-line */
 }
 
 .scroll-up {
@@ -135,4 +135,4 @@ section.work {
   display: none;
 }
 
-@import 'github-corner.scss';
+@import 'github-corner.scss'; /* stylelint-disable-line */

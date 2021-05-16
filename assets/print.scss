@@ -1,12 +1,12 @@
 // Thanks to https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
 // for some of the tips
 
+@import 'horizontal-header.scss';
+
 @page {
   margin: 2cm;
   size: a4 portrait;
 }
-
-@import 'horizontal-header.scss';
 
 main,
 header {
