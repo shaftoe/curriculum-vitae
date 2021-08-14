@@ -19,6 +19,10 @@ main {
   font-size: 1.3em;
 }
 
+footer {
+  margin-bottom: unset;
+}
+
 .scroll-up {
   bottom: initial;
   top: 1rem;
@@ -40,4 +44,10 @@ main {
     "community  ......"
     "references ......"
     "links      ......";
+}
+
+.contact-icon {
+  position: fixed;
+  top: unset;
+  bottom: 1rem;
 }
