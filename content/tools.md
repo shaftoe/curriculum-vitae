@@ -4,15 +4,16 @@ weight: 5
 ---
 
 - Linux / macOS
+- Git
 - AWS Cloud Development Kit
 - Terraform
 - Docker / Compose
-- Vagrant
 - Ansible
 - Puppet
+- Vagrant
 - Fabric
 - Jenkins
-- VSCode / Vim / Git
+- VSCode / Vim
 - FaaS (Lambda / Serverless)
 - Hugo / Jekyll
 - Vue.js

@@ -3,7 +3,8 @@ title: "Digital Presence"
 weight: 10
 ---
 
-- [Tech Blog](https://a.l3x.in/)
+- [Tech Blog](https://a.l3x.in/blog)
+- [Personal Website](https://a.l3x.in/)
 - [GitHub](https://github.com/shaftoe)
 - [StackOverflow](https://stackoverflow.com/users/2274124/alexander-fortin)
 - [Hackerrank](https://www.hackerrank.com/alexander_fortin)
@@ -11,4 +12,3 @@ weight: 10
 - [Mastodon](https://fosstodon.org/@alex)
 - [Twitter](https://twitter.com/alexanderfortin)
 - [LinkedIn](http://www.linkedin.com/in/alexanderfortin)
-- [YouTube Channel](https://www.youtube.com/channel/UCb5FGNik4wXGrVGRS1x2JZw)
