@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Alexander Fortin's curriculum vitae"
 googleAnalytics = "UA-157359136-1"
 enableGitInfo = true
+disableKinds = ["taxonomy", "taxonomyTerm"] # https://discourse.gohugo.io/t/found-no-layout-for-taxonomyterm-language-en-output-format-html/16376/2
 
 [params]
   author = "Alexander Fortin"
