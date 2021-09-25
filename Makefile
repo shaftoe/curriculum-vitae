@@ -12,8 +12,12 @@ build:
 build-quiet:
 	@hugo --quiet
 
-pre-commit: build-quiet lint
+pre-commit: build-quiet lint clean
+
+clean:
 	@rm -r public/
 
 server:
 	@hugo server --environment dev
+
+.PHONY: lint-css lint-html lint build build-quiet pre-commit clean server
