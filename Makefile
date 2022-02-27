@@ -1,11 +1,3 @@
-lint-css:
-	@node_modules/.bin/stylelint assets/*
-
-lint-html:
-	@html5validator --root public/
-
-lint: lint-css lint-html
-
 build:
 	hugo --gc --minify --verbose
 
@@ -20,4 +12,4 @@ clean:
 server:
 	@hugo server --environment dev
 
-.PHONY: lint-css lint-html lint build build-quiet pre-commit clean server
+.PHONY: build build-quiet pre-commit clean server
