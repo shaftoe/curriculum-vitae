@@ -7,7 +7,7 @@ weight: 9
 - Fitness & Wellbeing
 - Cooking
 - Science Fiction / Fantasy
-- Mixtapes
+- DJing
 - Environment
 - Philosophy
 - Psychology
