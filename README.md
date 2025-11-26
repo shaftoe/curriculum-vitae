@@ -1,99 +1,163 @@
-# A curriculum vitæ built with modern web technologies
+# Curriculum Vitae
 
-[![google-insights](https://img.shields.io/badge/Google%20Insights-FAST-green)][insights] [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)][license] [![Netlify Status](https://api.netlify.com/api/v1/badges/53c5b088-2498-40b4-8e82-8f6ae243713c/deploy-status)][deploys]
-
-A simple and effective way to keep the CV up to date and always available as an (accessible and blazing fast) web site.
-
-Regardless of the technology used, since long you can always find the most up-to-date version of my CV at <https://cv.l3x.in/>.
-
-Blog post: <https://a.l3x.in/2020/01/31/updating-curriculum-with-web-tech.html>
+A modern, data-driven curriculum vitae built with [Eleventy](https://www.11ty.dev/) that generates both a responsive web version and a PDF document.
 
 ## Features
 
-- easy to keep updated: all the actual content is filed under [`content/`](content), formatted in [Markdown][markdown]
-- simply reshuffle the layout editing one CSS property
-- fast load times, [Google Insights][insights] gives 99% thumbs up for both mobile and desktop
-- displays decently on any modern web browser (including low-end smartphones and screen readers)
-- unadorned printable layout used by the browser _Print_ function
-- single section views exposed as `/<section name>/`, e.g. <https://cv.l3x.in/about/>
+### 🎨 **Modern Web CV**
 
-## Tech
+- **Responsive Design**: Mobile-friendly layout that adapts to different screen sizes
+- **Clean UI**: Built with [Pico CSS](https://picocss.com/) framework with custom styling
+- **Font Awesome Icons**: Visual icons for navigation links (contact, GitHub, website, PDF)
+- **Print-Optimized**: Special print styles for generating PDF-friendly output
 
-- [Hugo](https://gohugo.io/) static site generator:
-  - generate HTML pages from Markdown content through [partials templates][hugo-partials]
-  - compile CSS files from SCSS assets thanks to the [native integration][hugo-scss]
-  - expose partial content as _pretty urls_ with [section templates][hugo-section-templates]
-  - all personal metadata in [config.toml](config.toml)
-- (as much [semantic](https://guide.freecodecamp.org/html/html5-semantic-elements/) as possible) HTML5 for markup
-- CSS3 _Grid_, _Flexbox_ and _Media queries_ for the responsive layout
-- no JavaScript
+### 📄 **Dual Output Format**
 
-## Usage
+- **HTML Version**: Fully responsive web page hosted on Netlify
+- **PDF Generation**: Automatically generates a PDF version using PDFKit during build
+- **SEO Optimized**: Includes meta tags, keywords, and structured data
 
-Please feel free to fork this repo, just remember to **clean up before publishing**:
+### 🗂️ **Data-Driven Architecture**
 
-- [config.toml](config.toml): base URL, name, job title and link to GitHub repo
-- `content/*.md`: sections, e.g. `about.md`
-- `content/work/*.md`: job entries
-- [README.md](README.md): this very file
-- [static/me.jpg](static/me.jpg)
+- **JSON Configuration**: Main CV data stored in `_data/main.json` (personal info, skills, languages, links)
+- **Markdown Job Entries**: Each work experience is a separate markdown file in `_jobs/` directory
+- **Numbered Sorting**: Jobs are automatically sorted by filename prefix (e.g., `1_company.md`, `2_company.md`)
+- **Frontmatter Support**: Each job includes metadata (title, company, location, period, tech stack)
 
-Everything else should be relatively abstract and reusable _as is_.
+### 🛠️ **Tech Stack Display**
 
-## Tweaks
+- **Collapsible Details**: Tech stack for each job is shown in expandable `<details>` elements
+- **Comma-Separated Lists**: Clean, inline display of technologies
+- **Dynamic Keywords**: Automatically generates SEO keywords from job technologies and skills
 
-- As it is well described in the CSS-Tricks article mentioned [below in the _credits_ section](#credits), named CSS `grid-template-areas` are used to position the various sections on the viewport, which makes it pretty easy to update the current layout when needed. For example:
+### 📋 **Structured Sections**
 
-      grid-template-areas:    =>      grid-template-areas:
-        "work   skills"       =>        "about  skills"
-        "work   ......"       =>        "work   work"
-        "about  ......";      =>        "work   work";
+- **Professional Experience**: Chronologically ordered work history
+- **Technical Skills**: Comprehensive list of technical competencies
+- **Soft Skills**: Professional and interpersonal skills
+- **Languages**: Language proficiencies
+- **Open Source Projects**: Links to personal projects
 
-  Search for `grid-template-areas` in [assets/style.scss](assets/style.scss) and [assets/large.scss](assets/large.scss) for current implementation.
+### ⚡ **Build & Performance**
 
-- If you want to add more sections and/or jobs a new Markdown content file needs to be created, e.g:
+- **HTML Minification**: Output HTML is automatically minified
+- **Static Generation**: Fast, pre-rendered static site
+- **Asset Optimization**: CSS and assets are optimized for production
 
-  - `hugo new new-section.md`
-  - `hugo new work/my-last-workplace.md`
+### 🚀 **Deployment**
 
-## Caveats
+- **Netlify Integration**: Configured for automatic deployment via Netlify
+- **Build Automation**: PDF generation happens automatically during build process
+- **Version Control**: Full Git history for tracking CV updates
 
-- the file name (without `.md`) of new added content will be used as CSS class, remember to add it somewhere in `grid-template-areas` in order to properly position the new section
-- the `title` defined in the [front matter][frontmatter] will be displayed as section/work title
-- grid order defined with `grid-template-areas` [is not respected](https://stackoverflow.com/a/59992837/2274124) when printing with Firefox, the normal ([weighted](https://gohugo.io/templates/lists/#by-weight)) markup order of content sections is used instead
+## Project Structure
 
-## Deploy
+```
+.
+├── _data/
+│   └── main.json          # Main CV data (personal info, skills, links)
+├── _includes/
+│   ├── base.njk           # Base HTML template
+│   └── index.njk         # Main CV content template
+├── _jobs/
+│   ├── 1_company.md       # Job entries (numbered for sorting)
+│   ├── 2_company.md
+│   └── ...
+├── lib/
+│   └── pdf-generator.js   # PDF generation logic
+├── _site/                 # Build output directory
+├── .eleventy.js          # Eleventy configuration
+├── bundle.css            # Custom styles
+├── index.md              # Entry point
+└── netlify.toml          # Netlify deployment config
+```
 
-You could evaluate to install [Stylelint][stylelint] and [Html5validator][html5validator], then add `make pre-commit` as a pre-commit hook, e.g.:
+## Getting Started
 
-    MY_HOOK=.git/hooks/pre-commit
-    echo make pre-commit > $MY_HOOK
-    chmod +x $MY_HOOK
+### Prerequisites
 
-I'm using [Netlify][netlify] to automate deployment at each new commit pushed to `origin/master`, see the [official documentation][netlify-docs] if you want to know more about their CI/CD features.
+- Node.js (v14 or higher)
+- npm
 
-PS Netlify promptly adds support for latest Hugo (stable) version as soon as it is released.
+### Installation
 
-## Credits
+```bash
+npm install
+```
 
-Many thanks to:
+### Development
 
-- [Ali Churcher](https://css-tricks.com/author/alichurcher/) for her [excellent CSS-Tricks article][css-tricks-article] which gave me the idea in the first place
-- Tim Holman for the [modern take](http://tholman.com/github-corners/) on the _fork me on Github_ link (in pure SVG!)
-- [Netlify][netlify] for their amazing platform and (free) services
-- Francesco Albanese of [Studiocompresso][studio-compresso] for continuous feedback plus shooting the profile picture
+Start the development server with live reload:
 
-[css-tricks-article]:     <https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/>
-[hugo-partials]:          <https://gohugo.io/templates/partials/>
-[hugo-scss]:              <https://gohugo.io/hugo-pipes/scss-sass/>
-[hugo-section-templates]: <https://gohugo.io/templates/section-templates/>
-[insights]:               <https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcv.l3x.in%2F&tab=desktop> "Google Insights page results for https://cv.l3x.in/"
-[markdown]:               <https://www.markdownguide.org/>
-[netlify-docs]:           <https://docs.netlify.com/site-deploys/overview/>
-[netlify]:                <https://www.netlify.com/>
-[studio-compresso]:       <https://www.studiocompresso.com/en/>
-[stylelint]:              <https://stylelint.io/>
-[html5validator]:         <https://pypi.org/project/html5validator/>
-[frontmatter]:            <https://gohugo.io/content-management/front-matter/>
-[license]:                <https://opensource.org/licenses/Apache-2.0>
-[deploys]:                <https://app.netlify.com/sites/hopeful-johnson-2088ad/deploys>
+```bash
+npm run serve
+```
+
+The site will be available at `http://localhost:8080`
+
+### Build
+
+Generate the static site and PDF:
+
+```bash
+npm run build
+```
+
+Output will be in the `_site/` directory.
+
+### Other Commands
+
+- `npm run format` - Format code with Prettier
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint issues automatically
+- `npm run clean` - Remove build output directory
+
+## Customization
+
+### Updating Personal Information
+
+Edit `_data/main.json` to update:
+
+- Name, role, title
+- Skills (tech skills, soft skills, languages)
+- Navigation links (contact, GitHub, website)
+- Open source projects
+
+### Adding/Editing Jobs
+
+1. Create or edit a markdown file in `_jobs/` directory
+2. Use numbered prefix for ordering (e.g., `11_newjob.md`)
+3. Include frontmatter with:
+
+   ```yaml
+   ---
+   title: Job Title
+   company: Company Name
+   location: City, Country
+   period: 2020 - 2023
+   tech:
+     - Technology 1
+     - Technology 2
+   ---
+   ```
+
+4. Write job description in markdown below the frontmatter
+
+### Styling
+
+- Main styles: `bundle.css`
+- Framework: Pico CSS (loaded via CDN)
+- Print styles: Included in `bundle.css` for PDF generation
+
+## Technologies Used
+
+- **Eleventy (11ty)**: Static site generator
+- **Nunjucks**: Template engine
+- **Pico CSS**: Minimal CSS framework
+- **PDFKit**: PDF generation library
+- **Font Awesome**: Icon library
+- **html-minifier-terser**: HTML minification
+
+## License
+
+ISC

@@ -1,0 +1,163 @@
+:root {
+  --pico-grid-column-gap: 2rem;
+  --pico-block-spacing-vertical: 1.5rem;
+}
+
+h1 {
+  --pico-font-size: 2.5rem;
+}
+
+h3 {
+  color: var(--pico-secondary);
+}
+
+h4 {
+  color: var(--pico-primary);
+}
+
+a {
+  --pico-text-decoration: none;
+}
+
+body > header {
+  margin-top: 1rem;
+}
+
+ul.comma-separated {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.comma-separated li {
+  display: inline;
+}
+
+ul.comma-separated li:not(:last-child)::after {
+  content: ', ';
+  margin-right: 0.25em;
+}
+
+header.grid,
+main.grid {
+  grid-template-columns: 2fr 1fr;
+}
+
+header.grid ul {
+  list-style: none;
+}
+
+header.grid nav {
+  display: flex;
+  flex-direction: column;
+}
+
+header.grid nav p {
+  margin: 0;
+  padding: 0;
+}
+
+header.grid nav p a {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header.grid nav p:nth-child(1) a::before {
+  content: '\f0e0'; /* envelope icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+header.grid nav p:nth-child(2) a::before {
+  content: '\f09b'; /* github icon */
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+header.grid nav p:nth-child(3) a::before {
+  content: '\f0ac'; /* globe icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+header.grid nav p:nth-child(4) a::before {
+  content: '\f1c1'; /* file-pdf icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  body > header {
+    margin-top: initial;
+  }
+
+  header.grid {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+
+  main.grid {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+
+  header.grid nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Print styles for PDF/letter generation */
+@media print {
+  @page {
+    margin: 1cm 1cm 1cm 1cm; /* small margin to maximize printable area */
+    size: A4 portrait;
+  }
+
+  html,
+  body,
+  header,
+  footer,
+  :root {
+    margin: 0;
+    padding: 0;
+    display: block;
+    --pico-font-size: 8pt;
+  }
+
+  main.grid {
+    display: flex; /* let content stretch fully */
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  main.grid > section {
+    margin: 0 0 0.5cm 0;
+    padding: 0;
+    border: none; /* ensure there are no borders */
+    box-shadow: none;
+    width: 100%;
+  }
+
+  /* Avoid thick outlines or borders on any printable element */
+  * {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Alexander Fortin's curriculum vitae",
+  "name": "Alexander Fortin",
+  "role": "Software Engineer",
+  "sections": {
+    "tech skills": [
+      "Software Development",
+      "Linux System Administration",
+      "Database Administration",
+      "Cloud Computing",
+      "DevSecOps",
+      "Scalability & Container Orchestration",
+      "Infrastructure as Code",
+      "Configuration Management",
+      "Monitoring & Observability",
+      "CI/CD Pipelines",
+      "Network Administration"
+    ],
+    "soft skills": [
+      "Technical Leadership",
+      "Mentoring & Coaching",
+      "Processes Optimization",
+      "Technical Documentation",
+      "Solution Oriented"
+    ],
+    "languages": ["English (fluent)", "Italian (native)", "Spanish (fluent)", "German (basic)"]
+  },
+  "OpenSource Projects": {
+    "Runvoy": "https://runvoy.github.io",
+    "Static Comments": "https://github.com/shaftoe/static-comments"
+  },
+  "nav": {
+    "Contact": "https://a.l3x.in/contact/",
+    "GitHub": "https://github.com/shaftoe",
+    "Website": "https://a.l3x.in",
+    "Download": "/cv-alexander-fortin.pdf"
+  },
+  "pdf": "cv-alexander-fortin.pdf"
+}

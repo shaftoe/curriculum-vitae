@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language or 'en' }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title or main.title }}</title>
+		<meta name="author" content="{{ main.name }}">
+		<meta name="generator" content="{{ eleventy.generator }}">
+		<meta name="description" content="{{ description or main.title }}">
+		<meta name="keywords" content="{{ collections.commaSeparatedKeywords }}">
+		<meta name="robots" content="index, follow">
+		<link rel="icon" type="image/x-icon" href="/favicon-16x16.png">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
+		<link rel="stylesheet" href="/bundle.css">
+	</head>
+
+	<body>
+		<header class="container grid">
+			<hgroup>
+				<h1>{{ main.name }}</h1>
+				<h2>{{ main.role }}</h2>
+			</hgroup>
+
+			<nav>
+				{% for title, url in main.nav %}
+				<p><a href="{{ url }}" target="_blank" rel="noopener">{{ title }}</a></p>
+				{% endfor %}
+			</nav>
+		</header>
+
+		<hr/>
+
+		<main class="container grid">
+			{{ content | safe }}
+		</main>
+
+		<hr/>
+
+		<footer class="container">
+			<div><small>Last updated {{ generated }}</small></div>
+			<div>
+				<small>
+					Built with <a href="https://www.11ty.dev/">Eleventy</a>
+					&#183;
+					Hosted by <a href="https://netlify.com">Netlify</a>
+					&#183;
+					Source code on <a href="https://github.com/shaftoe/curriculum-vitae">GitHub</a>
+				</small>
+			</div>
+		</footer>
+	</body>
+</html>

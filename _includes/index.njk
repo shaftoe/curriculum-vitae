@@ -1,0 +1,70 @@
+---
+layout: base.njk
+---
+<section id="professional-experience">
+    <h3>Professional Experience</h3>
+
+    {% for job in collections.jobs %}
+    {% if job.data.title and job.data.company %}
+
+        <article id="{{ job.data.company | slugify }}">
+
+            <header>
+                <h4>{{ job.data.title }}</h4>
+                <p><strong>{{ job.data.company }}</strong>
+                {% if job.data.location %} - <em>{{ job.data.location }}</em>{% endif %}
+                {% if job.data.period %}<br><small>{{ job.data.period }}</small>{% endif %}</p>
+            </header>
+
+            {{ job.content | safe }}
+
+            {% if job.data.tech %}
+            <footer>
+                <details name="tech-stack">
+                    <summary>Tech stack</summary>
+
+                    <ul class="comma-separated">
+                    {% for tech in job.data.tech %}
+                        <li><ins>{{ tech }}</ins></li>
+                    {% endfor %}
+                    </ul>
+
+                </details>
+            </footer>
+            {% endif %}
+
+        </article>
+
+    {% endif %}
+    {% endfor %}
+</section>
+
+<div>
+
+    {% for category, items in main.sections %}
+    <section id="{{ category | slugify }}">
+        <header>
+            <h3>{{ category | title }}</h3>
+        </header>
+
+        <ul>
+            {% for item in items %}
+            <li><strong>{{ item }}</strong></li>
+            {% endfor %}
+        </ul>
+
+    </section>
+    {% endfor %}
+
+    <section id="open-source-projects">
+        <header>
+            <h3>Open Source Projects</h3>
+        </header>
+        <ul>
+            {% for project, url in main["OpenSource Projects"] %}
+            <li><a href="{{ url }}" target="_blank" rel="noopener">{{ project }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+</div>
