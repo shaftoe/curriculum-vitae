@@ -18,4 +18,4 @@ tech:
   - BackupPC
 ---
 
-Architect, design, expand, deploy and monitor systems and networks infrastructures (internal and for customers), coordinate and lead services and software deployment, select and decide technical strategies and new technologies to adopt, support sales and marketing decision making
+Architected and expanded infrastructure for internal and customer systems. Led services and software deployments. Defined technical strategies and technology adoption decisions.

@@ -11,4 +11,4 @@ tech:
   - Backup Solutions
 ---
 
-Study, develop and deploy an anti-spam system based upon Linux, Postfix and Spamassassin
+Developed and deployed anti-spam system using Linux, Postfix, and Spamassassin

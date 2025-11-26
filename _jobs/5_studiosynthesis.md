@@ -16,4 +16,4 @@ tech:
   - Asterisk PBX
 ---
 
-Architect, design, deploy and monitor cloud infrastructures (both public and private) for business intelligence services, monitor local physical systems (mostly Linux) and networks, monitor and manage on-site physical systems and networks for customers, contribute to develop PHP modules for vTiger CRM open source software
+Architected and deployed public/private cloud infrastructure for business intelligence. Monitored and managed local and on-site systems. Developed PHP modules for vTiger CRM.

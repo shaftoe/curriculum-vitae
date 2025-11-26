@@ -5,4 +5,4 @@ location: Brescia (Italy)
 period: 1998 - 2007
 ---
 
-Manage and operate a wide range of media players, including audio/video mixers, RVM players and recorders, non-linear editing software (Adobe Premiere, Sonic Foundry Vegas), embedded software for on-air playlists, audio-video switches, cameras, lights-mixers, wireless microphones, etc
+Operated broadcast equipment: audio/video mixers, players, recorders, non-linear editing (Adobe Premiere, Sonic Foundry Vegas), on-air playlists software, switches, cameras, lighting, wireless microphones

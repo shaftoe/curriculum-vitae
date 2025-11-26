@@ -12,4 +12,4 @@ tech:
   - OpenVPN
 ---
 
-Project, establish, test and manage the Internet and Intranet e-mail service. Improve security deploying a new Linux-based firewall, beside ordinary system administration tasks for Linux-based servers in the network.
+Designed and deployed Internet/Intranet email services. Improved security with a Linux-based firewall. Administered Linux servers across the network.

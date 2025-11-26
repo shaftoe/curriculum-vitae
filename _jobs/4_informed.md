@@ -17,4 +17,4 @@ tech:
   - BIND
 ---
 
-Manage and monitor the overall behavior of the internal network, including backups/restores, add new services, deploy new systems, keep systems updated, provide support for corporate customers, help desk support for dial-up customers, racks/patch panels wirings maintenance
+Managed network infrastructure: backups/restores, new services and systems deployment, updates, corporate customer support, help desk for dial-up customers, rack/patch panel maintenance
