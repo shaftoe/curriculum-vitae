@@ -18,4 +18,4 @@ tech:
   - BackupPC
 ---
 
-Architected and expanded infrastructure for internal and customer systems. Led services and software deployments. Defined technical strategies and technology adoption decisions.
+IT consulting: architected and expanded infrastructure for internal and customer systems. Led services and software deployments. Defined technical strategies and technology adoption decisions.
