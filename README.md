@@ -76,13 +76,12 @@ A modern, data-driven curriculum vitae built with [Eleventy](https://www.11ty.de
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm
+- Bun
 
 ### Installation
 
 ```bash
-npm install
+bun install
 ```
 
 ### Development
@@ -90,7 +89,7 @@ npm install
 Start the development server with live reload:
 
 ```bash
-npm run serve
+bun run serve
 ```
 
 The site will be available at `http://localhost:8080`
@@ -100,17 +99,17 @@ The site will be available at `http://localhost:8080`
 Generate the static site and PDF:
 
 ```bash
-npm run build
+bun run build
 ```
 
 Output will be in the `_site/` directory.
 
 ### Other Commands
 
-- `npm run format` - Format code with Prettier
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues automatically
-- `npm run clean` - Remove build output directory
+- `bun run format` - Format code with Prettier
+- `bun run lint` - Run ESLint
+- `bun run lint:fix` - Fix ESLint issues automatically
+- `bun run clean` - Remove build output directory
 
 ## Customization
 
