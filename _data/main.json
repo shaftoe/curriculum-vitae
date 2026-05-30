@@ -5,6 +5,7 @@
   "sections": {
     "tech skills": [
       "Software Development",
+      "Coding agents & Context engineering",
       "Linux System Administration",
       "Database Administration",
       "Cloud Computing",
@@ -26,6 +27,8 @@
     "languages": ["English (fluent)", "Italian (native)", "Spanish (fluent)", "German (basic)"]
   },
   "OpenSource Projects": {
+    "Pi coding agent GitHub action": "https://github.com/shaftoe/pi-coding-agent-action",
+    "Awesome Pi": "https://awesome-pi.site",
     "Save to Ink": "https://saveto.ink",
     "Runvoy": "https://runvoy.site",
     "Static Comments": "https://github.com/shaftoe/static-comments"
