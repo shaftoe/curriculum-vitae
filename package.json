@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bun x @11ty/eleventy",
+    "build": "pnpm exec eleventy",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:check": "eslint . --max-warnings 0",
     "clean": "rm -rf _site",
-    "serve": "bun x @11ty/eleventy --serve"
+    "serve": "pnpm exec eleventy --serve"
   },
   "keywords": [],
   "author": "",
