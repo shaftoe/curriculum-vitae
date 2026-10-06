@@ -26,9 +26,10 @@
     "languages": ["English (fluent)", "Italian (native)", "Spanish (fluent)", "German (basic)"]
   },
   "OpenSource Projects": {
+    "Pi Coding Agent Action": "https://github.com/marketplace/actions/pi-github-action",
+    "Awesome Pi": "https://awesome-pi.site/",
     "Save to Ink": "https://saveto.ink",
-    "Runvoy": "https://runvoy.site",
-    "Static Comments": "https://github.com/shaftoe/static-comments"
+    "Runvoy": "https://runvoy.site"
   },
   "nav": {
     "Contact": "https://a.l3x.in/contact/",
